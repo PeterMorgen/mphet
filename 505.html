@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>505 - Erro Interno</title>
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container {
+      z-index: 1;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 10em;
+      margin: 0;
+      font-weight: bold;
+      animation: fade-in-out 5s ease-in-out infinite, glow 2s ease-in-out infinite;
+    }
+
+    .animated-text {
+      font-size: 2.5em;
+      margin-top: 20px;
+      animation: fade-in-out 5s ease-in-out infinite;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1em;
+      color: #000;
+      background-color: #fff;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: none;
+      animation: fade-in-out 5s ease-in-out infinite;
+    }
+
+    .back-button:hover {
+      background-color: #000;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      }
+      50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    @keyframes fade-in-out {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes fall {
+      0% {
+        top: -50px;
+        opacity: 1;
+      }
+      100% {
+        top: 110vh;
+        opacity: 0;
+      }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-3px); }
+      50% { transform: translateX(3px); }
+      75% { transform: translateX(-2px); }
+    }
+
+    .emoji {
+      position: absolute;
+      font-size: 1.5em;
+      animation-name: fall, shake;
+      animation-timing-function: linear, ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 6em; }
+      .animated-text { font-size: 1.5em; }
+      .back-button { padding: 10px 20px; font-size: 0.9em; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 4em; }
+      .animated-text { font-size: 1.2em; }
+      .back-button { padding: 8px 16px; font-size: 0.85em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>505</h1>
+    <p class="animated-text">Filme não encontrado em nosso servidor.<br>Tente novamente mais tarde. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+	<g fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1">
+		<circle cx="12" cy="12" r="10" stroke-width="2" />
+		<path stroke-width="2" d="M7.881 16.244c.493-.427 1.142-.735 1.842-.937A8.3 8.3 0 0 1 12 15c.786 0 1.57.103 2.277.307c.7.202 1.35.51 1.842.937" />
+		<circle cx="9" cy="10" r="1.25" fill="#fff" stroke-width="0.5" />
+		<circle cx="15" cy="10" r="1.25" fill="#fff" stroke-width="0.5" />
+	</g>
+</svg></p>
+    <a href="https://fgcflix.vercel.app/" class="back-button">Voltar Para Pagina Inicial</a>
+  </div>
+
+  <div id="emoji-container"></div>
+
+  <script>
+    const container = document.getElementById('emoji-container');
+    const emojis = ['🍿', '🎬', '🎭'];
+    const totalEmojis = 20;
+
+    for (let i = 0; i < totalEmojis; i++) {
+      const emojiEl = document.createElement('div');
+      emojiEl.classList.add('emoji');
+      emojiEl.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+
+      emojiEl.style.left = Math.random() * 100 + 'vw';
+      emojiEl.style.top = '-50px';
+
+      const fallDuration = (5 + Math.random() * 5).toFixed(2);
+      const shakeDuration = (1.5 + Math.random() * 1).toFixed(2);
+      const delay = (Math.random() * 5).toFixed(2);
+
+      emojiEl.style.animationDuration = `${fallDuration}s, ${shakeDuration}s`;
+      emojiEl.style.animationDelay = `${delay}s, 0s`;
+
+      container.appendChild(emojiEl);
+    }
+  </script>
+</body>
+</html>
