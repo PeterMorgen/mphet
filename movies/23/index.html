@@ -227,53 +227,14 @@
                                                 fill="#EEAA0F"></path>
                                         </svg>
                                     </span>
-                                    <span id="visualizacoes" class="h-24 color-white">Carregando visualizações...
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path fill="#fff" fill-rule="evenodd"
-            d="M12 17.8c4.034 0 7.686-2.25 9.648-5.8C19.686 8.45 16.034 6.2 12 6.2S4.314 8.45 2.352 12c1.962 3.55 5.614 5.8 9.648 5.8M12 5c4.808 0 8.972 2.848 11 7c-2.028 4.152-6.192 7-11 7s-8.972-2.848-11-7c2.028-4.152 6.192-7 11-7m0 9.8a2.8 2.8 0 1 0 0-5.6a2.8 2.8 0 0 0 0 5.6m0 1.2a4 4 0 1 1 0-8a4 4 0 0 1 0 8" 
-            stroke-width="0.5" stroke="#fff"></path>
-    </svg>
-</span>
-
-<script>
-    const intervalo = 60000; // 1 minuto
-    const numeroInicial = 0; // Sempre começar no 0
-
-    // Verifica se já existe o número salvo
-    let numeroVisualizacoes = localStorage.getItem('visualizacoes');
-
-    if (numeroVisualizacoes === null) {
-        // Se não existir, começa do 0
-        numeroVisualizacoes = numeroInicial;
-        localStorage.setItem('visualizacoes', numeroVisualizacoes);
-    } else {
-        // Se existir, converte para número
-        numeroVisualizacoes = parseInt(numeroVisualizacoes);
-    }
-
-    function mostrarVisualizacoes() {
-        document.getElementById('visualizacoes').innerHTML = numeroVisualizacoes + ' visualizações' +
-            '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">' +
-            '<path fill="#fff" fill-rule="evenodd" d="M12 17.8c4.034 0 7.686-2.25 9.648-5.8C19.686 8.45 16.034 6.2 12 6.2S4.314 8.45 2.352 12c1.962 3.55 5.614 5.8 9.648 5.8M12 5c4.808 0 8.972 2.848 11 7c-2.028 4.152-6.192 7-11 7s-8.972-2.848-11-7c2.028-4.152 6.192-7 11-7m0 9.8a2.8 2.8 0 1 0 0-5.6a2.8 2.8 0 0 0 0 5.6m0 1.2a4 4 0 1 1 0-8a4 4 0 0 1 0 8" stroke-width="0.5" stroke="#fff"></path>' +
-            '</svg>';
-    }
-
-    function atualizarNumero() {
-        numeroVisualizacoes += 1; // Sempre soma 1
-        localStorage.setItem('visualizacoes', numeroVisualizacoes);
-        mostrarVisualizacoes();
-    }
-
-    // Mostra o número quando a página carrega
-    mostrarVisualizacoes();
-
-    // A cada 1 minuto, incrementa 1
-    setInterval(() => {
-        atualizarNumero();
-    }, intervalo);
-</script>
-
-
+                                    <span class="h-24 color-white">10 visualizações<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="#fff" fill-rule="evenodd"
+                                            d="M12 17.8c4.034 0 7.686-2.25 9.648-5.8C19.686 8.45 16.034 6.2 12 6.2S4.314 8.45 2.352 12c1.962 3.55 5.614 5.8 9.648 5.8M12 5c4.808 0 8.972 2.848 11 7c-2.028 4.152-6.192 7-11 7s-8.972-2.848-11-7c2.028-4.152 6.192-7 11-7m0 9.8a2.8 2.8 0 1 0 0-5.6a2.8 2.8 0 0 0 0 5.6m0 1.2a4 4 0 1 1 0-8a4 4 0 0 1 0 8"
+                                            stroke-width="0.5" stroke="#fff"></path>
+                                    </svg></span>
+                                    
                                     
                                     
                                     
@@ -350,7 +311,7 @@
                                 z-index: 10;
                             ">NOVO</span>
                                 <img src="https://d1muf25xaso8hp.cloudfront.net/https://image.tmdb.org/t/p/w500/m4gzzzeYRmrwasrBdJmjhBmjS3U.jpg" alt="">
-                                <a href="https://fgcflix.vercel.app/movies/20/" class="cus-btn light">
+                                <a href="https://fgcflix.vercel.app/movies/11/" class="cus-btn light">
                                     Assistir Agora
                                     <i class="far fa-play"></i>
                                 </a>
@@ -381,7 +342,7 @@
                                 z-index: 10;
                             ">NOVO</span>
                                 <img src="https://d1muf25xaso8hp.cloudfront.net/https://image.tmdb.org/t/p/w500/8W6pH0sLPKSq8gM7qEnQiRSzWSN.jpg" alt="">
-                                <a href="https://fgcflix.vercel.app/movies/22/" class="cus-btn light">
+                                <a href="https://fgcflix.vercel.app/movies/13/" class="cus-btn light">
                                     Assistir Agora
                                     <i class="far fa-play"></i>
                                 </a>
