@@ -1,696 +1,830 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página não encontrada </title>
+    <style>
+      /* 404 Error Page */
+      html,
+      body {
+        font-family: "Helvetica Neue", "Helvetica, Arial", sans-serif;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+      }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Striker HTML5 Template">
+      @-webkit-keyframes Gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
 
-    <title>FGC FLIX | FILMES E SERIES ONLINE</title>
+      @keyframes Gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+      h1,
+      h6 {
+        font-weight: 300;
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        left: 0;
+      }
+      #oopss {
+        position: fixed;
+        left: 0px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 1.5em;
+        z-index: 9999;
+      }
+      #oopss .error-text {
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+      }
+      #oopss svg {
+        margin: 85px auto 20px;
+        height: 342px;
+      }
+      #oopss .error-text span {
+        position: relative;
+        font-size: 3.4em;
+        font-weight: 900;
+        margin-bottom: 50px;
+      }
+      #oopss .error-text p.p-a {
+        font-size: 22px;
+        margin: 30px 0 15px 0;
+      }
+      #oopss .error-text p.p-b {
+        font-size: 15px;
+        margin-top: -10px;
+      }
+    </style>
+  </head>
 
-    <!-- All CSS files -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/aksVideoPlayer.css">
-    <link rel="stylesheet" href="css/app.css">
-</head>
-
-<body>
-    <!-- Preloader-->
-    <div id="preloader" class="loader">
-        <div class="loader__container">
-            <div class="loader__film">
-                <img class="loader__film-img" src="images/film.png" alt="">
-                <img class="loader__film-img" src="images/film.png" alt="">
-            </div>
-            <img class="loader__camera" src="images/camera.png" alt="">
-        </div>
-    </div>
-    <!-- Back To Top Start -->
-    <a href="#main-wrapper" id="backto-top" class="back-to-top"><i class="fas fa-angle-up"></i></a>
-    <!-- Main Wrapper Start -->
-    <div id="main-wrapper" class="main-wrapper overflow-hidden">
-
-        <!-- Header Area Start -->
-        <header class="large-screens">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg p-0">
-                    <div class="collapse navbar-collapse" id="mynavbar">
-                        <a href="https://fgcflix.vercel.app/" class="navbar-brand m-0 p-0"><img alt="" src="logo.png"></a>
-                        <ul class="navbar-nav m-0">
-                            <li class="has-children">
-                                <a href="https://fgcflix.vercel.app/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24">
-                                        <g fill="none" stroke="#f3ce27" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2">
-                                            <path d="M5 12H3l9-9l9 9h-2M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7">
-                                            </path>
-                                            <path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6"></path>
-                                        </g>
-                                    </svg> Pagina Inicial <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24">
-                                        <path fill="#fff" d="m7 10l5 5l5-5z" stroke-width="0.5" stroke="#fff" />
-                                    </svg></a>
-                                <ul class="submenu">
-                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                height="24" viewBox="0 0 24 24">
-                                                <g fill="none" stroke="#f3ce27" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="1.5" color="#f3ce27">
-                                                    <path
-                                                        d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                                                    <path
-                                                        d="M6.5 16v-4m0 0V9.125c0-.116 0-.174.005-.223a1 1 0 0 1 .897-.897C7.451 8 7.509 8 7.625 8H9a2 2 0 1 1 0 4zm10.966-.777C17.292 10.527 16.478 10 15.5 10c-1.105 0-2 .672-2 1.5s.895 1.5 2 1.5s2 .672 2 1.5s-.895 1.5-2 1.5c-.982 0-1.798-.53-1.968-1.23" />
-                                                </g>
-                                            </svg> Psd Gratis <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
-                                                breve)</span></a> </li>
-                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                height="24" viewBox="0 0 24 24">
-                                                <path fill="#f3ce27"
-                                                    d="M4 22q-.825 0-1.412-.587T2 20V8q0-.825.588-1.412T4 6h4l4-4l4 4h4q.825 0 1.413.588T22 8v12q0 .825-.587 1.413T20 22zm0-2h16V8H4zm2-2h12l-3.75-5l-3 4L9 14zm11.5-5q.625 0 1.063-.437T19 11.5t-.437-1.062T17.5 10t-1.062.438T16 11.5t.438 1.063T17.5 13m-7.4-7h3.8L12 4.1zM4 20V8z"
-                                                    stroke-width="0.5" stroke="#f3ce27" />
-                                            </svg> Wallpapers <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
-                                                breve)</span></a></li>
-                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                height="24" viewBox="0 0 24 24">
-                                                <path fill="#f3ce27"
-                                                    d="M22 8v3h-2V8H4v10h9.78c-.4.59-.65 1.26-.74 2H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2m-3.5 5v5.21a2.5 2.5 0 1 0-1 4.79a2.5 2.5 0 0 0 2.5-2.5V15h2v-2z"
-                                                    stroke-width="0.5" stroke="#f3ce27" />
-                                            </svg> Repertorios <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
-                                                breve)</span></a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="https://fgcflix.vercel.app/categoria/page1/"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24">
-                                        <path fill="#e7c115"
-                                            d="m19.65 6.5l-2.74-3.54l3.93-.78l.78 3.92zm-2.94.57l-2.74-3.53l-1.97.39l2.75 3.53zM4.16 5.5l-.98.19a1.995 1.995 0 0 0-1.57 2.35L2 10l4.9-.97zm7.65 2.55L9.07 4.5l-1.97.41l2.75 3.53zM4 20v-8h16v1.09c.72.12 1.39.37 2 .72V10H2v10a2 2 0 0 0 2 2h9.81c-.35-.61-.59-1.28-.72-2zm19-2.11l-2.89-.25L19 15l-1.13 2.64l-2.87.25l2.18 1.88l-.68 2.81l2.5-1.49l2.45 1.49l-.65-2.81z"
-                                            stroke-width="0.5" stroke="#e7c115" />
-                                    </svg> Filmes</a></li>
-                            <li class="menu-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 20 20">
-                                        <path fill="#f3ce27"
-                                            d="M4.5 4A2.5 2.5 0 0 0 2 6.5v7A2.5 2.5 0 0 0 4.5 16h11a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 15.5 4zM3 6.5A1.5 1.5 0 0 1 4.5 5h11A1.5 1.5 0 0 1 17 6.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 3 13.5zM15.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5m-.5 6.5a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm.5-3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5M4 6.5a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm.5 5.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5M4 9.5a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm4-1.374c0-.483.46-.783.828-.54l2.94 1.953c.31.206.31.716 0 .922l-2.94 1.953c-.367.243-.828-.057-.828-.54z"
-                                            stroke-width="0.5" stroke="#f3ce27" />
-                                    </svg> Series</a></li>
-                            <li class="menu-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="none" stroke="#f3ce27" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="1.5">
-                                            <path
-                                                d="m8.699 10.646l-.104-.49m4.995-.55l-.104-.49M8.5 15.57c1.258.316 2.686.316 4.123-.069c1.436-.385 2.672-1.099 3.604-2.001" />
-                                            <path d="m12.587 15.637l.478.974a1.5 1.5 0 1 0 2.693-1.322l-.46-.935" />
-                                            <path
-                                                d="M3 18.562v-6.518C3 7.05 7.03 3 12 3s9 4.05 9 9.044v6.517c0 1.162-.967 2.519-2 2c-.835-.42-2.223-.52-3 0c-.874.585-2.126.585-3 0c-.885-.593-1.649-.57-2.5 0c-.874.585-2.126.585-3 0c-.777-.52-1.665-.42-2.5 0c-1.033.519-2-.838-2-2" />
-                                        </g>
-                                    </svg> Animes</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
-                                    breve)</span></li>
-                            <li class="menu-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24">
-                                        <path fill="none" stroke="#f3ce27" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2"
-                                            d="M17.286 21.09q-1.69.001-5.288-2.615q-3.596 2.617-5.288 2.616q-2.726 0-.495-6.8q-9.389-6.775 2.135-6.775h.076Q10.211 2 12 2q1.785 0 3.574 5.516h.076q11.525 0 2.133 6.774q2.23 6.802-.497 6.8" />
-                                    </svg> Desenhos</a> <span
-                                    style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em breve)</span></li>
-                            <li class="menu-item">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
-                                        <circle cx="17" cy="28" r="2" fill="#f3ce27" stroke-width="1"
-                                            stroke="#f3ce27" />
-                                        <path fill="#f3ce27" d="M8 20.586L13.586 15L15 16.414L9.414 22z"
-                                            stroke-width="1" stroke="#f3ce27" />
-                                        <path fill="#f3ce27"
-                                            d="M28 16.584L19.414 8H6v2h12.586l3 3L6 28.586L7.414 30L23 14.415L26.584 18L23 21.586L24.414 23L28 19.416a2.004 2.004 0 0 0 0-2.832M24.5 9A3.5 3.5 0 1 1 28 5.5A3.504 3.504 0 0 1 24.5 9m0-5A1.5 1.5 0 1 0 26 5.5A1.5 1.5 0 0 0 24.5 4"
-                                            stroke-width="1" stroke="#f3ce27" />
-                                    </svg>
-                                    Futebol</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
-                                    breve)</span>
-                            </li>
-
-                        </ul>
-                        <div class="right-nav">
-                            <div class="search-block">
-                                <form action="#" class="input-group search-bar">
-                                    <button class="search" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="#fff"
-                                                d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
-                                                stroke-width="0.5" stroke="#fff" />
-                                        </svg></button>
-                                    <input type="text" placeholder="Pesquisar..." required="">
-                                </form>
-                            </div>
-                            <ul class="navbar-nav m-0">
-                                <li class="menu-item">
-
-                                </li>
-                                <li class="has-children">
-                                    <a href="javascript:void(0);"><img
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAAAXNSR0IArs4c6QAAAqdJREFUWEftmMurzVEUxz9feYWJvA0IeZQIQyWuUh5F8hpRRiYylD/B4E6UjA1kQB4TlIlHlJluCV030k1dIuq6JcnyW7Xpyjnn99t7/363js6enr32+uz1W2vt7zqii5a6iJUebFNfqxfZromsmS0HVgGDkl7XCV5bGpjZBeAA8AMYA2YCk4Grkk7WAZ0Na2ZrgMfADGB6C6hvwCiwWdJQDnQWbAC9DyyoAPEe2CLpVYW9Lbfkwr4DFkc4H5a0JGL/X1uTYc2sHzgFTIlw7ilxTtKZCJs/W3NgvdKXJTgdkrQywS7tuTUzr/LPwKwEp2OSUuySYVcAd4CUCHmB7ZD0NvaiOWng1T0/1iEwImlRgl1aZN2RmT30VpTg9J6k7Ql2WbCHgfPAvAjHn4ATkq5F2OR3gxDdm8BeqHTpn8ANSQdTQN0mOWd/OzSzAWB9CYABA5I2poLWAhsifAnYCcxpAfPRO0ehwI7lgNYGG4B3BdW1CZgG+Gv1FLgi6W4uaK2wdcCUnZGds2UO6vy9FlgzWxh0wuwguicBXv1fgS/AG0kjueBJsGa2Dthd5OQ+wMW3V7tPB/7muwCfCnwPeevAPjW4rxeAtzsvuGex8FGwZuYVfbqQeR7BGB07nssv5jrYhdBZSZerQleCNbPVRS+9HoRLjH4t4/CO8RI4VGXkKYUNn9w/nU+tTa3nxaOxX9JgJwcdYc1sadHsnwBeQE0vF/PbJA23c1QG6019Q9OU485/JKmtkmsLa2ZrgQdtntCm+L299UnyPP5ndYLdA1wsZODcpshanPsBOC7pdiysSz+H9TY1Ucvb2VFJt/5r2L7iDzZv2N7EJ2p5Wh4pxh4fmarnrO80s62J43bq5UbbgfqBpY9Cqtcm7HqwTUS1lwZNRbXrIvsLHfi0LM+bZqkAAAAASUVORK5CYII="
-                                            alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <header class="small-screen">
-            <div class="container-fluid">
-                <div class="mobile-menu">
-                    <div>
-                        <a class="navbar-brand" href="#"><img alt="" src="images/logo.png"></a>
-                    </div>
-                    <div class="hamburger-menu">
-                        <div class="bar"></div>
-                    </div>
-                </div>
-                <nav class="mobile-navar d-xl-none">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="anime-listing.html" class="active">Listing</a></li>
-                        <li class="has-children">Detail <span class="icon-arrow"></span>
-                            <ul class="children">
-                                <li><a href="anime-detail.html">Anime Detail</a></li>
-                                <li><a href="movie-detail.html">Movie Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-children">Pages <span class="icon-arrow"></span>
-                            <ul class="children">
-                                <li><a href="./blog.html">Blog</a></li>
-                                <li><a href="./blog-detail.html">Blog Detail</a></li>
-                                <li><a href="./404.html">404</a></li>
-                                <li><a href="./coming-soon.html">Coming Soon</a></li>
-                                <li><a href="./sign-up.html">Sign Up</a></li>
-                                <li><a href="./login.html">Login</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- Header Area end -->
-
-        <!-- Hero Banner start -->
-        <div class="hero-banner-1 p-40">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xxl-8 mb-30 mb-xxl-0">
-                        <div class="anime-card ">
-                            <div class="content">
-                                <img src="https://cdn.discordapp.com/attachments/1332031964248670429/1370131644014395445/image.png?ex=681e6207&is=681d1087&hm=faf22982ebe0583cd9fcd08366e8dd4eded04bf85abf57563e52abbc6b809ce8&"
-                                    class="logo" alt="">
-                                <h2 class="h-40 bold color-white mb-16">O Rei Macaco<br> </h2>
-                                <ul class="tag unstyled mb-24">
-                                    <li>HD</li>
-                                    <li>2023</li>
-                                    <li>Animação, Fantasia, Aventura, Família, Comédia</li>
-                                    <li>01h 41m</li>
-                                    
-                                </ul>
-                                <p class="color-white mb-32"><b class="color-medium-gray">Sinopse: </b>O Rei Macaco é uma comédia de ação para toda a família sobre um Macaco cheio de carisma e seu Bastão mágico que embarcam <br>em uma aventura épica contra cem demônios, um excêntrico Rei Dragão e o maior inimigo do Macaco: seu próprio ego! No caminho, <br>uma jovem desafia o egocentrismo dele e mostra que até a menor pedrinha de todas pode ter um grande efeito no mundo.</p>
-                                <div class="btn-block">
-                                    <a href="https://fgcflix.vercel.app/movies/44/"
-                                        class="cus-btn primary">
-                                        <i class="far fa-play"></i>
-                                        Assistir Agora
-                                    </a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-        <!-- Main Content Start -->
-        <div class="page-content">
-            <!-- Categories Area Start -->
-
-            <!-- Categories Area End -->
-            <br><br><br>
-            <!-- trending Area Start -->
-            <section class="trending p-40">
-                <div class="container-fluid">
-                    <h2 class="h-40 mb-40 bold">Novos Filmes Adicionados <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-                        <path fill="#fff" d="m19.65 6.5l-2.74-3.54l3.93-.78l.78 3.92zm-2.94.57l-2.74-3.53l-1.97.39l2.75 3.53zM19 13c1.1 0 2.12.3 3 .81V10H2v10a2 2 0 0 0 2 2h9.81c-.51-.88-.81-1.9-.81-3c0-3.31 2.69-6 6-6m-7.19-4.95L9.07 4.5l-1.97.41l2.75 3.53zM4.16 5.5l-.98.19a2.01 2.01 0 0 0-1.57 2.35L2 10l4.9-.97zm17.18 10.34l-3.59 3.59l-1.59-1.59L15 19l2.75 3l4.75-4.75z" stroke-width="0.5" stroke="#fff" />
-                    </svg></h2>
-                    <div class="card-slider ">
-                        <div class="card st-2">
-                            <div class="img-block mb-20">
-                                 <!-- Selo NOVO -->
-                                 <span style="
-                                 position: absolute;
-                                 top: 10px;
-                                 left: 10px;
-                                 background: red;
-                                 color: white;
-                                 padding: 5px 10px;
-                                 font-size: 12px;
-                                 font-weight: bold;
-                                 border-radius: 5px;
-                                 z-index: 10;
-                             ">NOVO</span>
-                                <img src="https://d1muf25xaso8hp.cloudfront.net/https://image.tmdb.org/t/p/w500/8O7qM2ue5VHPsu1FFbZSRMpCqwY.jpg" alt="">
-                                <a href="https://fgcflix.vercel.app/movies/41/" class="cus-btn light">
-                                    Assistir Agora
-                                    <i class="far fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="content">
-                                <!-- Selo NOVO -->
-                                <span style="
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                background: red;
-                                color: white;
-                                padding: 5px 10px;
-                                font-size: 12px;
-                                font-weight: bold;
-                                border-radius: 5px;
-                                z-index: 10;
-                            ">NOVO</span>
-                                <h4 class="h-24 color-white bold">A Fuga das Galinhas: A Ameaça dos Nuggets</h4>
-                                <ul class="tag unstyled">
-                                    <li>Animacao, Aventura, Comedia, Familia</li>
-                                    <li>2023</li>
-                                    <li class="icon"><i class="fas fa-star"></i></li>
-                                    <li>8.7</li>
-                                </ul>
-                            </div>
-                        </div>     
-                        <div class="card st-2">
-                            <div class="img-block mb-20">
-                                <!-- Selo NOVO -->
-                                <span style="
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                background: red;
-                                color: white;
-                                padding: 5px 10px;
-                                font-size: 12px;
-                                font-weight: bold;
-                                border-radius: 5px;
-                                z-index: 10;
-                            ">NOVO</span>
-                                <img src="https://www.themoviedb.org/t/p/w342/bmwK5QCznqUT8bcDR7qROrxqgov.jpg" alt="">
-                                <a href="https://fgcflix.vercel.app/movies/44/" class="cus-btn light">
-                                    Assistir Agora
-                                    <i class="far fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="content">
-                                <!-- Selo NOVO -->
-                                <span style="
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                background: red;
-                                color: white;
-                                padding: 5px 10px;
-                                font-size: 12px;
-                                font-weight: bold;
-                                border-radius: 5px;
-                                z-index: 10;
-                            ">NOVO</span>
-                                <h4 class="h-24 color-white bold">O Rei Macaco</h4>
-                                <ul class="tag unstyled">
-                                    <li>Animacao, Fantasia, Aventura, Familia, Comedia</li>
-                                    <li>2023</li>
-                                    <li class="icon"><i class="fas fa-star"></i></li>
-                                    <li>5.8</li>
-                                </ul>
-                            </div>
-                        </div>     
-                        <div class="card st-2">
-                            <div class="img-block mb-20">
-                                <!-- Selo NOVO -->
-                                <span style="
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                background: red;
-                                color: white;
-                                padding: 5px 10px;
-                                font-size: 12px;
-                                font-weight: bold;
-                                border-radius: 5px;
-                                z-index: 10;
-                            ">NOVO</span>
-                                <img src="https://www.themoviedb.org/t/p/w342/uVBtqBJbdh04VMjfjWw4J3DjXg.jpg" alt="">
-                                <a href="https://fgcflix.vercel.app/movies/43/" class="cus-btn light">
-                                    Assistir Agora
-                                    <i class="far fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="content">
-                                <!-- Selo NOVO -->
-                                <span style="
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                background: red;
-                                color: white;
-                                padding: 5px 10px;
-                                font-size: 12px;
-                                font-weight: bold;
-                                border-radius: 5px;
-                                z-index: 10;
-                            ">NOVO</span>
-                                <h4 class="h-24 color-white bold">Scooby-Doo e Krypto - O Supercão</h4>
-                                <ul class="tag unstyled">
-                                    <li>Animacao, Familia, Misterio, Fantasia</li>
-                                    <li>2023</li>
-                                    <li class="icon"><i class="fas fa-star"></i></li>
-                                    <li>9.5</li>
-                                </ul>
-                            </div>
-                        </div>     
-                        <div class="card st-2">
-                            <div class="img-block mb-20">
-                                <!-- Selo NOVO -->
-                                <span style="
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                background: red;
-                                color: white;
-                                padding: 5px 10px;
-                                font-size: 12px;
-                                font-weight: bold;
-                                border-radius: 5px;
-                                z-index: 10;
-                            ">NOVO</span>
-                                <img src="https://d1muf25xaso8hp.cloudfront.net/https://image.tmdb.org/t/p/w500/sMcsZ7BlOf2LDhTlfPlWb3w6lJM.jpg" alt="">
-                                <a href="https://fgcflix.vercel.app/movies/40/" class="cus-btn light">
-                                    Assistir Agora
-                                    <i class="far fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="content">
-                                <!-- Selo NOVO -->
-                                <span style="
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                background: red;
-                                color: white;
-                                padding: 5px 10px;
-                                font-size: 12px;
-                                font-weight: bold;
-                                border-radius: 5px;
-                                z-index: 10;
-                            ">NOVO</span>
-                                <h4 class="h-24 color-white bold">Os Simpsons: O Filme</h4>
-                                <ul class="tag unstyled">
-                                    <li>Comédia, Família, Animação</li>
-                                    <li>2007</li>
-                                    <li class="icon"><i class="fas fa-star"></i></li>
-                                    <li>9.5</li>
-                                </ul>
-                            </div>
-                        </div>     
-                        <div class="card st-2">
-                            <div class="img-block mb-20">
-                                <img src="https://www.themoviedb.org/t/p/w342/18IsRVfs5MkkTcqTGlUAnka6sCh.jpg" alt="">
-                                <a href="https://fgcflix.vercel.app/movies/42/" class="cus-btn light">
-                                    Assistir Agora
-                                    <i class="far fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="content">
-                                <!-- Selo NOVO -->
-                                <span style="
-                                position: absolute;
-                                top: 10px;
-                                left: 10px;
-                                background: red;
-                                color: white;
-                                padding: 5px 10px;
-                                font-size: 12px;
-                                font-weight: bold;
-                                border-radius: 5px;
-                                z-index: 10;
-                            ">NOVO</span>
-                                <h4 class="h-24 color-white bold">South Park: Joining the Panderverse</h4>
-                                <ul class="tag unstyled">
-                                    <li>Animacao, Comedia, Ficcao Cientifica</li>
-                                    <li>2023</li>
-                                    <li class="icon"><i class="fas fa-star"></i></li>
-                                    <li>6.9</li>
-                                </ul>
-                            </div>
-                            
-                        </div>     
-                    </div>
-                </div>
-            </section>
-            <!-- Recently Area Start -->
-            
-            <!-- treading Area End -->
-
-            <!-- Continue Area Start -->
-            
-            <!-- Continue Area End -->
-
-            <!-- Recently Area Start -->
-
-            <!-- Recently Area Start -->
-
-            <!-- Coming Soon Area Start -->
-            <section class="comming-soon p-40">
-                <div class="container-fluid">
-                    <div class="content">
-                        <img src="https://image.tmdb.org/t/p/w300/4VtkIaj76TpQNfhDHXQDdT9uBN5.jpg" alt="">
-                        <div class="details">
-                            <h4 class="h-20 bold color-primary mb-8">Em breve em nosso Site</h4>
-                            <h2 class="h-40 bold color-white mb-12">Minecraft</h2>
-                            <p class="color-medium-gray mb-24">Quatro desajustados enfrentam problemas comuns do dia a
-                                dia quando, de repente, são sugados por um portal misterioso para o Overworld: uma terra
-                                fascinante e cúbica, movida pela imaginação. Para voltarem para casa, eles precisarão
-                                dominar esse novo mundo enquanto embarcam em uma jornada mágica ao lado de um crafter
-                                experiente e inesperado: Steve.</p>
-                            <ul class="tag unstyled mb-24">
-                                <li>Comedia, Aventura, Fantasia</li>
-                                <li>2025</li>
-                                <li class="icon"><i class="fas fa-star"></i></li>
-                                <li>9.5</li>
-                            </ul>
-                            <a href="https://youtu.be/EVKYAAES6JQ"
-                                        class="cus-btn primary">
-                                        <i class="far fa-play"></i>
-                                        Assistir Trailer
-                                    </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Coming Soon Area End -->
-
-            <!-- Trailer Area Start -->
+  <body>
+    <div id="oopss">
+      <div class="error-text">
+        <svg
+          class="ldi-f17d8n"
+          width="342px"
+          height="342px"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="xMidYMid"
+          style="background: none;"
+        >
+          <!--?xml version="1.0" encoding="utf-8"?--><!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)--><svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 100"
+            style="transform-origin: 50px 50px 0px;"
+            xml:space="preserve"
+          >
+            <g style="transform-origin: 50px 50px 0px;">
+              <g
+                fill="rgb(0, 0, 0)"
+                style="fill: rgb(0, 0, 0); transform-origin: 50px 50px 0px; transform: scale(0.6);"
+              >
+                <g style="transform-origin: 50px 50px 0px;">
+                  <g fill="rgb(0, 0, 0)" style="fill: rgb(0, 0, 0);">
+                    <style
+                      type="text/css"
+                      class="ld ld-swim-px"
+                      style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -1.3s; animation-direction: normal;"
+                    >
+                      .st0 {
+                        fill: #f4e6c8;
+                        stroke: #323232;
+                        stroke-linejoin: round;
+                      }
+                      .st0,
+                      .st1,
+                      .st2,
+                      .st3 {
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                      }
+                      .st1 {
+                        stroke-linejoin: round;
+                        fill: #f3e4c7;
+                        stroke: #323232;
+                      }
+                      .st2,
+                      .st3 {
+                        fill: #d65a62;
+                        stroke: #000101;
+                      }
+                      .st3 {
+                        fill: #fff;
+                        stroke: #323232;
+                      }
+                      .st4 {
+                        fill: #e0e0e0;
+                        stroke: #000101;
+                        stroke-width: 6;
+                      }
+                      .st4,
+                      .st5,
+                      .st6 {
+                        stroke-miterlimit: 10;
+                      }
+                      .st5 {
+                        stroke-linecap: round;
+                        fill: none;
+                        stroke: #000101;
+                        stroke-width: 5;
+                      }
+                      .st6 {
+                        fill: #e15c64;
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                      }
+                      .st7 {
+                        fill: #e6e6e6;
+                      }
+                      .st8 {
+                        fill: #e0e0e0;
+                      }
+                      .st9 {
+                        fill: #f7b26a;
+                      }
+                      .st10,
+                      .st11,
+                      .st12 {
+                        fill: #e6e6e6;
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                      }
+                      .st11,
+                      .st12 {
+                        fill: #b3b4b4;
+                      }
+                      .st12 {
+                        fill: #f7b26a;
+                      }
+                      .st13 {
+                        opacity: 0.2;
+                      }
+                      .st14 {
+                        fill: #e15c64;
+                      }
+                      .st15 {
+                        fill: #f47e5f;
+                      }
+                      .st16 {
+                        fill: #849b87;
+                      }
+                      .st17,
+                      .st18,
+                      .st19 {
+                        fill: #f47e5f;
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                      }
+                      .st18,
+                      .st19 {
+                        stroke-linejoin: round;
+                      }
+                      .st19 {
+                        fill: url(#SVGID_1_);
+                        stroke-width: 7;
+                      }
+                      .st20 {
+                        fill: #666;
+                      }
+                      .st21 {
+                        fill: #323232;
+                      }
+                      .st22 {
+                        fill: #656666;
+                      }
+                      .st23,
+                      .st24 {
+                        fill: #f7b26a;
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-linejoin: round;
+                        stroke-miterlimit: 10;
+                      }
+                      .st24 {
+                        fill: #e15c64;
+                      }
+                      .st25 {
+                        fill: #fff;
+                      }
+                      .st26,
+                      .st27 {
+                        stroke-linejoin: round;
+                      }
+                      .st26 {
+                        fill: url(#SVGID_2_);
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                        stroke: #fff;
+                      }
+                      .st27 {
+                        opacity: 0.2;
+                        stroke: #000;
+                      }
+                      .st27,
+                      .st28,
+                      .st29,
+                      .st30 {
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                      }
+                      .st28 {
+                        fill: none;
+                        stroke-linecap: round;
+                        stroke: #fff;
+                      }
+                      .st29,
+                      .st30 {
+                        stroke: #323232;
+                      }
+                      .st29 {
+                        stroke-linejoin: round;
+                        fill: url(#SVGID_3_);
+                      }
+                      .st30 {
+                        fill: url(#SVGID_4_);
+                      }
+                      .st30,
+                      .st31,
+                      .st32 {
+                        stroke-linejoin: round;
+                      }
+                      .st31 {
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                        fill: #e0e0e0;
+                      }
+                      .st32 {
+                        fill: url(#SVGID_5_);
+                      }
+                      .st32,
+                      .st33 {
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                      }
+                      .st33,
+                      .st34 {
+                        fill: none;
+                        stroke-linejoin: round;
+                      }
+                      .st34,
+                      .st35,
+                      .st36 {
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-linecap: round;
+                        stroke-miterlimit: 10;
+                      }
+                      .st35 {
+                        stroke-linejoin: round;
+                        fill: #f7b26a;
+                      }
+                      .st36 {
+                        fill: none;
+                      }
+                      .st37 {
+                        fill: #acbd81;
+                      }
+                      .st38 {
+                        fill: #f4e6c8;
+                      }
+                      .st39 {
+                        fill: #acbd81;
+                        stroke: #323232;
+                      }
+                      .st39,
+                      .st40,
+                      .st41,
+                      .st42,
+                      .st43 {
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                      }
+                      .st40 {
+                        opacity: 0.2;
+                        stroke: #000;
+                      }
+                      .st41,
+                      .st42,
+                      .st43 {
+                        fill: #f4e6c8;
+                        stroke: #323232;
+                      }
+                      .st42,
+                      .st43 {
+                        fill: none;
+                        stroke: #666;
+                      }
+                      .st43 {
+                        stroke: #849b87;
+                        stroke-width: 8;
+                      }
+                      .st44,
+                      .st45,
+                      .st46,
+                      .st47,
+                      .st48 {
+                        fill: url(#SVGID_6_);
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                      }
+                      .st45,
+                      .st46,
+                      .st47,
+                      .st48 {
+                        fill: none;
+                        stroke: #fff;
+                      }
+                      .st46,
+                      .st47,
+                      .st48 {
+                        fill: url(#SVGID_7_);
+                        stroke: #323232;
+                      }
+                      .st47,
+                      .st48 {
+                        fill: url(#SVGID_8_);
+                        stroke-linejoin: round;
+                      }
+                      .st48 {
+                        fill: url(#SVGID_9_);
+                      }
+                      .st49,
+                      .st50,
+                      .st51 {
+                        fill: none;
+                        stroke: #849b87;
+                        stroke-width: 4;
+                        stroke-miterlimit: 10;
+                      }
+                      .st50,
+                      .st51 {
+                        fill: url(#SVGID_10_);
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                      }
+                      .st51 {
+                        fill: none;
+                      }
+                      .st52,
+                      .st53 {
+                        stroke: #fff;
+                        stroke-width: 3.5;
+                        stroke-linecap: round;
+                      }
+                      .st52 {
+                        stroke-miterlimit: 10;
+                        fill: url(#SVGID_11_);
+                      }
+                      .st53 {
+                        fill: url(#SVGID_12_);
+                      }
+                      .st53,
+                      .st54,
+                      .st55 {
+                        stroke-miterlimit: 10;
+                      }
+                      .st54 {
+                        stroke-linejoin: round;
+                        fill: #acbd81;
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                      }
+                      .st55 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-width: 6;
+                      }
+                      .st56,
+                      .st57,
+                      .st58,
+                      .st59,
+                      .st60 {
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                      }
+                      .st56 {
+                        stroke-linecap: round;
+                        fill: #f7b26a;
+                        stroke: #fff;
+                      }
+                      .st57,
+                      .st58,
+                      .st59,
+                      .st60 {
+                        fill: #f4e6c8;
+                        stroke: #e15c64;
+                      }
+                      .st58,
+                      .st59,
+                      .st60 {
+                        fill: none;
+                      }
+                      .st59,
+                      .st60 {
+                        stroke: #fff;
+                        stroke-width: 8;
+                      }
+                      .st60 {
+                        fill: url(#SVGID_13_);
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                      }
+                      .st61 {
+                        fill: #000101;
+                      }
+                      .st62 {
+                        fill: url(#SVGID_14_);
+                      }
+                      .st63 {
+                        fill: #4a3826;
+                      }
+                      .st64 {
+                        fill: none;
+                        stroke: #4a3826;
+                        stroke-width: 5;
+                        stroke-linecap: round;
+                        stroke-miterlimit: 10;
+                      }
+                      .st65 {
+                        fill: url(#SVGID_15_);
+                      }
+                      .st66 {
+                        fill: url(#SVGID_16_);
+                      }
+                      .st67 {
+                        fill: url(#SVGID_17_);
+                      }
+                      .st68 {
+                        fill: url(#SVGID_18_);
+                      }
+                      .st69 {
+                        fill: url(#SVGID_19_);
+                      }
+                      .st70,
+                      .st71 {
+                        fill: none;
+                        stroke-width: 5;
+                      }
+                      .st70 {
+                        stroke-miterlimit: 10;
+                        stroke: #4a3826;
+                      }
+                      .st71 {
+                        stroke: #000;
+                      }
+                      .st71,
+                      .st72,
+                      .st73,
+                      .st74 {
+                        stroke-miterlimit: 10;
+                      }
+                      .st72 {
+                        stroke-linejoin: round;
+                        fill: #e0e0e0;
+                        stroke: #000101;
+                        stroke-width: 6;
+                      }
+                      .st73,
+                      .st74 {
+                        fill: #000101;
+                        stroke: #000;
+                        stroke-width: 5;
+                        stroke-linecap: round;
+                      }
+                      .st74 {
+                        fill: #a0c8d7;
+                      }
+                      .st75 {
+                        fill: url(#SVGID_20_);
+                      }
+                      .st76 {
+                        fill: url(#SVGID_21_);
+                      }
+                      .st77 {
+                        fill: url(#SVGID_22_);
+                      }
+                      .st78 {
+                        fill: url(#SVGID_23_);
+                      }
+                      .st79 {
+                        fill: url(#SVGID_24_);
+                      }
+                      .st80 {
+                        fill: #000101;
+                        stroke: #4a3826;
+                        stroke-width: 5;
+                        stroke-linecap: round;
+                        stroke-miterlimit: 10;
+                      }
+                      .st81 {
+                        fill: url(#SVGID_25_);
+                      }
+                      .st82 {
+                        fill: #a0c8d7;
+                      }
+                      .st83 {
+                        fill: #9ec4d2;
+                      }
+                      .st84 {
+                        fill: #f0ae6b;
+                      }
+                      .st85,
+                      .st86 {
+                        fill: #d65a62;
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-miterlimit: 10;
+                      }
+                      .st86 {
+                        fill: #323232;
+                        stroke: #000101;
+                        stroke-width: 6;
+                        stroke-linejoin: round;
+                      }
+                      .st87 {
+                        fill: #d65a62;
+                      }
+                      .st88 {
+                        fill: #493727;
+                      }
+                      .st89 {
+                        fill: url(#SVGID_26_);
+                      }
+                      .st90 {
+                        fill: #d65a62;
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-linejoin: round;
+                        stroke-miterlimit: 10;
+                      }
+                      .st91 {
+                        fill: #f3e4c7;
+                      }
+                      .st92 {
+                        fill: #f0ae6b;
+                        stroke: #323232;
+                        stroke-width: 3.5;
+                        stroke-linejoin: round;
+                        stroke-miterlimit: 10;
+                      }
+                      .st93 {
+                        fill: #66503a;
+                      }
+                    </style>
+                    <g
+                      class="ld ld-swim-px"
+                      style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -1.21875s; animation-direction: normal;"
+                    >
+                      <circle
+                        class="st4"
+                        cx="50"
+                        cy="50"
+                        r="40"
+                        fill="#fff"
+                        stroke="#000000"
+                        style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0);"
+                      ></circle>
+                    </g>
+                    <g
+                      class="ld ld-swim-px"
+                      style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -1.1375s; animation-direction: normal;"
+                    >
+                      <path
+                        class="st5"
+                        d="M31.866,71.591c2.57-7.556,9.709-13,18.134-13s15.564,5.444,18.134,13"
+                        stroke="#000000"
+                        style="stroke: rgb(0, 0, 0);"
+                      ></path>
+                    </g>
+                    <g
+                      class="ld ld-swim-px"
+                      style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -1.05625s; animation-direction: normal;"
+                    >
+                      <line
+                        class="st71"
+                        x1="27.5"
+                        y1="32.409"
+                        x2="39.5"
+                        y2="44.409"
+                        stroke="rgb(0, 0, 0)"
+                        style="stroke: rgb(0, 0, 0);"
+                      ></line>
+                    </g>
+                    <g
+                      class="ld ld-swim-px"
+                      style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -0.975s; animation-direction: normal;"
+                    >
+                      <line
+                        class="st71"
+                        x1="27.5"
+                        y1="44.409"
+                        x2="39.5"
+                        y2="32.409"
+                        stroke="rgb(0, 0, 0)"
+                        style="stroke: rgb(0, 0, 0);"
+                      ></line>
+                    </g>
+                    <g
+                      class="ld ld-swim-px"
+                      style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -0.89375s; animation-direction: normal;"
+                    >
+                      <line
+                        class="st71"
+                        x1="60.5"
+                        y1="32.409"
+                        x2="72.5"
+                        y2="44.409"
+                        stroke="rgb(0, 0, 0)"
+                        style="stroke: rgb(0, 0, 0);"
+                      ></line>
+                    </g>
+                    <g
+                      class="ld ld-swim-px"
+                      style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -0.8125s; animation-direction: normal;"
+                    >
+                      <line
+                        class="st71"
+                        x1="60.5"
+                        y1="44.409"
+                        x2="72.5"
+                        y2="32.409"
+                        stroke="rgb(0, 0, 0)"
+                        style="stroke: rgb(0, 0, 0);"
+                      ></line>
+                    </g>
+                    <metadata
+                      xmlns:d="https://loading.io/stock/"
+                      class="ld ld-swim-px"
+                      style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -0.73125s; animation-direction: normal;"
+                    >
+                      <d:name
+                        class="ld ld-swim-px"
+                        style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -0.65s; animation-direction: normal;"
+                        >dead face</d:name
+                      >
+                      <d:tags
+                        class="ld ld-swim-px"
+                        style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -0.56875s; animation-direction: normal;"
+                        >dead
+                        face,hurt,wound,sad,heartbroken,die,death,sick,fail,emotion,feeling,emoji</d:tags
+                      >
+                      <d:license
+                        class="ld ld-swim-px"
+                        style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -0.4875s; animation-direction: normal;"
+                        >cc-by</d:license
+                      >
+                      <d:slug
+                        class="ld ld-swim-px"
+                        style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -0.40625s; animation-direction: normal;"
+                        >f17d8n</d:slug
+                      >
+                    </metadata>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <style
+              type="text/css"
+              class="ld ld-swim-px"
+              style="transform-origin: 50px 50px 0px; animation-duration: 1.3s; animation-delay: -0.325s; animation-direction: normal;"
+            >
+              path,
+              ellipse,
+              circle,
+              rect,
+              polygon,
+              polyline,
+              line {
+                stroke-width: 0;
+              }
+              @keyframes ld-swim-px {
+                0% {
+                  -webkit-transform: translate(0, 0) rotate(0deg);
+                  transform: translate(0, 0) rotate(0deg);
+                }
+                12.5% {
+                  -webkit-transform: translate(1px, -2px) rotate(3deg);
+                  transform: translate(1px, -2px) rotate(3deg);
+                }
+                25% {
+                  -webkit-transform: translate(0, -3px) rotate(6deg);
+                  transform: translate(0, -3px) rotate(6deg);
+                }
+                37.5% {
+                  -webkit-transform: translate(-1px, -2px) rotate(3deg);
+                  transform: translate(-1px, -2px) rotate(3deg);
+                }
+                50% {
+                  -webkit-transform: translate(0, 0) rotate(0deg);
+                  transform: translate(0, 0) rotate(0deg);
+                }
+                62.5% {
+                  -webkit-transform: translate(1px, 2px) rotate(-3deg);
+                  transform: translate(1px, 2px) rotate(-3deg);
+                }
+                75% {
+                  -webkit-transform: translate(0, 3px) rotate(-6deg);
+                  transform: translate(0, 3px) rotate(-6deg);
+                }
+                87.5% {
+                  -webkit-transform: translate(-1px, 2px) rotate(-3deg);
+                  transform: translate(-1px, 2px) rotate(-3deg);
+                }
+                100% {
+                  -webkit-transform: translate(0, 0) rotate(0deg);
+                  transform: translate(0, 0) rotate(0deg);
+                }
+              }
+              @-webkit-keyframes ld-swim-px {
+                0% {
+                  -webkit-transform: translate(0, 0) rotate(0deg);
+                  transform: translate(0, 0) rotate(0deg);
+                }
+                12.5% {
+                  -webkit-transform: translate(1px, -2px) rotate(3deg);
+                  transform: translate(1px, -2px) rotate(3deg);
+                }
+                25% {
+                  -webkit-transform: translate(0, -3px) rotate(6deg);
+                  transform: translate(0, -3px) rotate(6deg);
+                }
+                37.5% {
+                  -webkit-transform: translate(-1px, -2px) rotate(3deg);
+                  transform: translate(-1px, -2px) rotate(3deg);
+                }
+                50% {
+                  -webkit-transform: translate(0, 0) rotate(0deg);
+                  transform: translate(0, 0) rotate(0deg);
+                }
+                62.5% {
+                  -webkit-transform: translate(1px, 2px) rotate(-3deg);
+                  transform: translate(1px, 2px) rotate(-3deg);
+                }
+                75% {
+                  -webkit-transform: translate(0, 3px) rotate(-6deg);
+                  transform: translate(0, 3px) rotate(-6deg);
+                }
+                87.5% {
+                  -webkit-transform: translate(-1px, 2px) rotate(-3deg);
+                  transform: translate(-1px, 2px) rotate(-3deg);
+                }
+                100% {
+                  -webkit-transform: translate(0, 0) rotate(0deg);
+                  transform: translate(0, 0) rotate(0deg);
+                }
+              }
+              .ld.ld-swim-px {
+                -webkit-animation: ld-swim-px 3s infinite linear;
+                animation: ld-swim-px 3s infinite linear;
+              }
+            </style>
+          </svg>
+        </svg>
+        <span>404</span>
+        <p class="p-a">Pagina Não encontrada!</p>
+        <p class="p-b">A página que você Tentou acessar não está disponível!</p>
         
-            <!-- Trailer Area End -->
-            <section class="trending p-40">
-                <div class="container-fluid">
-                    <br>
-            <br><br>
-            <br>
-                    <div class="heading mb-32">
-                        <h2 class="h-40 bold">Top Filmes Mais Assistidos <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-                            <path fill="#fff" d="M21.97 14.607a1.07 1.07 0 0 1-.73 1l-1.88.62a3.9 3.9 0 0 0-1.56 1a4.06 4.06 0 0 0-1 1.57l-.65 1.87a1.14 1.14 0 0 1-.38.52a1.1 1.1 0 0 1-.63.2a1 1 0 0 1-.62-.2a1.07 1.07 0 0 1-.39-.53l-.63-1.88a4 4 0 0 0-2.53-2.54l-1.88-.62a1.13 1.13 0 0 1-.53-.39a1.06 1.06 0 0 1 .54-1.64l1.87-.62a4 4 0 0 0 2.56-2.55l.62-1.86a1 1 0 0 1 .36-.52a1 1 0 0 1 .61-.23a1 1 0 0 1 .64.18a1 1 0 0 1 .41.52l.63 1.9a4 4 0 0 0 2.55 2.56l1.87.65a1 1 0 0 1 .52.38a1.1 1.1 0 0 1 .23.61M12.1 7.656a1 1 0 0 1-.67.93l-1.34.44a2.6 2.6 0 0 0-1 .64a2.7 2.7 0 0 0-.64 1l-.47 1.34a1 1 0 0 1-.34.47a1.05 1.05 0 0 1-.58.19a1 1 0 0 1-.93-.68l-.44-1.34a2.6 2.6 0 0 0-.64-1a2.7 2.7 0 0 0-1-.64l-1.35-.45a.92.92 0 0 1-.48-.36a.93.93 0 0 1-.19-.57a1 1 0 0 1 .19-.58a1 1 0 0 1 .49-.34l1.34-.45a2.7 2.7 0 0 0 1-.64c.29-.277.509-.62.64-1l.45-1.32a1 1 0 0 1 .33-.48a.93.93 0 0 1 .56-.2a.87.87 0 0 1 .58.16a1 1 0 0 1 .38.47l.45 1.37c.135.378.354.72.64 1a2.7 2.7 0 0 0 1 .64l1.35.47a1 1 0 0 1 .65.92z" stroke-width="0.5" stroke="#fff" />
-                        </svg></h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-xxl-3 col-xl-4 col-sm-6 mb-30 mb-xl-0">
-                            <div class="card">
-                                <div class="img-block mb-30">
-                                    <img src="https://image.tmdb.org/t/p/w500/j24zrqp8RdDKsuvNDqrAkbBjCxC.jpg" alt="">
-                                    <a href="https://fgcflix.vercel.app/movies/5/" class="cus-btn light">
-                                        Assistir Agora
-                                        <i class="far fa-play"></i>
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="list">1.</div>
-                                    <div class="name">
-                                        <h4 class="h-24 color-white bold">Um Espião e Meio</h4>
-                                        <h6 class="h-20 color-medium-gray ">Ação, Comédia</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-4 col-sm-6 mb-30 mb-xl-0">
-                            <div class="card">
-                                <div class="img-block mb-30">
-                                    <img src="https://d1muf25xaso8hp.cloudfront.net/https://image.tmdb.org/t/p/w500/m4gzzzeYRmrwasrBdJmjhBmjS3U.jpg" alt="">
-                                    <a href="https://fgcflix.vercel.app/movies/20/" class="cus-btn light">
-                                        Assistir Agora
-                                        <i class="far fa-play"></i>
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="list">2.</div>
-                                    <div class="name">
-                                        <h4 class="h-24 color-white bold">De Volta à Ação</h4>
-                                        <h6 class="h-20 color-medium-gray ">Ação, Comédia</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-4 col-sm-6 mb-30 mb-sm-0">
-                            <div class="card">
-                                <div class="img-block mb-30">
-                                    <img src="https://d1muf25xaso8hp.cloudfront.net/https://image.tmdb.org/t/p/w500/wWn78TMMw8yOdr5sG0Yl9v4saoA.jpg" alt="">
-                                    <a href="https://fgcflix.vercel.app/movies/23/" class="cus-btn light">
-                                        Assistir Agora
-                                        <i class="far fa-play"></i>
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="list">3.</div>
-                                    <div class="name">
-                                        <h4 class="h-24 color-white bold">Conclave</h4>
-                                        <h6 class="h-20 color-medium-gray ">Suspense, Drama</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-4 col-sm-6 d-xxl-block d-xl-none d-lg-block">
-                            <div class="card">
-                                <div class="img-block mb-30">
-                                    <img src="https://image.tmdb.org/t/p/w500/grM1am6mYzxA84xDzTk23FQU7dG.jpg" alt="">
-                                    <a href="https://fgcflix.vercel.app/movies/2/" class="cus-btn light">
-                                        Assistir Agora
-                                        <i class="far fa-play"></i>
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="list">4.</div>
-                                    <div class="name">
-                                        <h4 class="h-24 color-white bold">Minha Culpa: Londres</h4>
-                                        <h6 class="h-20 color-medium-gray ">Drama, Romance</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Top Area Start -->
-            
-            <!-- Top Area Start -->
-            
-            <!-- Recently Area Start -->
-            
-        </div>
-
-        <!-- Main Content End -->
-
-        <!-- Footer Area Start  -->
-        <footer>
-            <div class="container-fluid">
-                <div class="footer-main">
-                    <div class="footer-info">
-                        <div class="footer-about">
-                            <div class="logo mb-40">
-                                <a href="#">
-                                    <img src="logo.png" alt="">
-                                </a>
-                            </div>
-                            <p class="light-gray h-20 light mb-48">
-                                Todos os arquivo estão hospedados <br> sob nosso domínio.
-                            </p>
-
-                            <ul class="unstyled social-icons">
-                                <li>
-                                    <a href="https://www.instagram.com/felipegravacoes_/">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="#fff" d="M16 7a1 1 0 1 1 2 0a1 1 0 0 1-2 0" stroke-width="0.5" stroke="#fff" />
-                                            <path fill="#fff" fill-rule="evenodd" d="M12 7.25a4.75 4.75 0 1 0 0 9.5a4.75 4.75 0 0 0 0-9.5M8.75 12a3.25 3.25 0 1 1 6.5 0a3.25 3.25 0 0 1-6.5 0" clip-rule="evenodd" stroke-width="0.5" stroke="#fff" />
-                                            <path fill="#fff" fill-rule="evenodd" d="M17.258 2.833a47.7 47.7 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a46 46 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.8 47.8 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a46 46 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.2 46.2 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.4 44.4 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.2 46.2 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.4 44.4 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516" clip-rule="evenodd" stroke-width="0.5" stroke="#fff" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UCkbmoK3t2mOaJPi5QlIqswQ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="#fff" d="M23 9.71a8.5 8.5 0 0 0-.91-4.13a2.92 2.92 0 0 0-1.72-1A78 78 0 0 0 12 4.27a79 79 0 0 0-8.34.3a2.87 2.87 0 0 0-1.46.74c-.9.83-1 2.25-1.1 3.45a48 48 0 0 0 0 6.48a9.6 9.6 0 0 0 .3 2a3.14 3.14 0 0 0 .71 1.36a2.86 2.86 0 0 0 1.49.78a45 45 0 0 0 6.5.33c3.5.05 6.57 0 10.2-.28a2.9 2.9 0 0 0 1.53-.78a2.5 2.5 0 0 0 .61-1a10.6 10.6 0 0 0 .52-3.4c.04-.56.04-3.94.04-4.54M9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08" stroke-width="0.5" stroke="#fff" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://discord.gg/Jv28AZQxdt">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="#fff" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12" stroke-width="0.5" stroke="#fff" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                            <h5 class="h-24 bold color-white mb-50">Parceiros</h5>
-                            <ul class="link unstyled">
-                                <li><a href="https://discord.gg/SV4tQJCS">City Brasil</a></li>
-                                <li><a href="https://discord.gg/Vv9mYwA6BZ">Vivendo na Fixa</a></li>
-                                <li><a href="https://www.youtube.com/channel/UCBAcygkY6LSQ5qlBMZ1zJrA">Alberth Cds</a></li>
-                                <li><a href="https://www.youtube.com/channel/UCM6DwQMJFnH-Sv8K2g-Gw_Q">Raphael atualizações</a></li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                            <h5 class="h-24 bold color-white mb-50">Outras Paginas</h5>
-                            <ul class="link unstyled">
-                                <li><a href="#">Psd Gratis</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
-                                    breve)</span></li>
-                                <li><a href="#">Wallpapers</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
-                                    breve)</span></li>
-                                <li><a href="#">Repertorios</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
-                                    breve)</span></li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                            <h5 class="h-24 bold color-white mb-24">Equipe SoundGrave</h5>
-                            <ul class="link unstyled">
-                                <li><a href="https://discord.gg/rG5xUKcv3s">Acessar</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <p class="color-white text-center copyright">Felipe Gravações Community © Copyright 2025</p>
-            </div>
-        </footer>
-        <!-- Footer Area End  -->
-
-        <!-- modal-popup area start  -->
-        <div class="modal fade" id="videoModal" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                
-            </div>
-        </div>
-        <!-- modal-popup area end  -->
-
+      </div>
     </div>
-
-    <!-- Jquery Js -->
-    <script src="js/jquery-3.6.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery-appear.js"></script>
-    <script src="js/jquery-validator.js"></script>
-    <script src="js/aksVideoPlayer.js"></script>
-
-    <!-- Site Scripts -->
-    <script src="js/app.js"></script>
-
-
-</body>
-
+  </body>
 </html>
