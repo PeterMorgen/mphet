@@ -1,0 +1,2049 @@
+footer,
+header {
+    display: block
+}
+
+b,
+body,
+body div,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+iframe,
+img,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: 0 0
+}
+
+img,
+input,
+select {
+    vertical-align: middle
+}
+
+html {
+    overflow-y: auto
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    font-size: 100%;
+    vertical-align: baseline
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden
+}
+
+.clearfix:after {
+    clear: both
+}
+
+b {
+    font-weight: 700
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    display: inline-block
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button,
+input,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+select,
+textarea {
+    border-radius: 0
+}
+
+textarea {
+    height: auto;
+    min-height: 50px
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+button {
+    width: auto;
+    overflow: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    border-radius: 0;
+    line-height: 1
+}
+
+.bslider {
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    will-change: opacity;
+    visibility: hidden
+}
+
+.bslider.deployed {
+    opacity: 1;
+    visibility: visible
+}
+
+.bslider-outer {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow-x: clip
+}
+
+.bslider-stage {
+    height: 100%;
+    position: relative;
+    display: block;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.bslider.deployed .bslider-stage {
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s
+}
+
+.bslider-stage.dragging {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 70ms ease !important;
+    -o-transition: all 70ms ease !important;
+    transition: all 70ms ease !important;
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.bslider-stage.dragging a {
+    pointer-events: none
+}
+
+.bslider-item {
+    float: left;
+    width: auto;
+    min-height: 1px;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none
+}
+
+.bslider-nav {
+    width: 60px;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    opacity: .6;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.bslider-nav:hover {
+    opacity: 1
+}
+
+.bslider-nav::before {
+    background: #000;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: calc(50% - 60px)
+}
+
+.bslider.undraggable .bslider-nav {
+    display: none
+}
+
+.bslider-prev {
+    left: 0;
+    visibility: hidden
+}
+
+.bslider.hasDragged .bslider-prev {
+    visibility: visible
+}
+
+.bslider-next {
+    right: 0
+}
+
+.bslider-next::before {
+    left: unset;
+    right: -60px
+}
+
+.bslider-nav .bicon {
+    width: 15px;
+    height: 30px;
+    top: calc(50% - 15px);
+    left: 15px;
+    position: absolute;
+    cursor: pointer
+}
+
+.bslider-next .bicon {
+    left: 27px
+}
+
+.bslider-nav .bicon .line {
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.bslider-nav .bicon .line:last-child {
+    top: 20px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.bslider-prev .bicon {
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+@media only screen and (max-width:640px) {
+    .bslider-nav {
+        width: 40px
+    }
+
+    .bslider-nav::before {
+        display: none
+    }
+
+    .bslider-next .bicon {
+        left: 15px
+    }
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/opensans.woff2) format('woff2-variations');
+    font-weight: 100 600;
+    font-display: swap
+}
+
+* {
+    -webkit-overflow-scrolling: touch
+}
+
+body,
+html {
+    height: 100%;
+    display: block
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--themeBackground);
+    overflow-x: hidden
+}
+
+svg path {
+    fill: #FFF
+}
+
+img {
+    font-size: 0
+}
+
+a {
+    color: #fff;
+    text-decoration: none
+}
+
+.hover {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .31s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer
+}
+
+.click {
+    overflow: hidden !important
+}
+
+.click .wave {
+    background-color: rgb(255 255 255 / .2);
+    -webkit-animation: waveAnim 1s 1;
+    animation: waveAnim 1s 1;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 300px
+}
+
+@-webkit-keyframes waveAnim {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes waveAnim {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.gButton {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 35px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #000;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 1px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 30px 0 rgb(0 0 0 / .4);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / .4)
+}
+
+.gButton:hover {
+    background: #191923;
+    -webkit-box-shadow: 0 0 30px 0 rgb(0 0 0 / .8);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / .8)
+}
+
+.gButton.red {
+    background: var(--mainColor);
+    color: var(--mainColorText);
+    -webkit-box-shadow: 0 0 30px 0 var(--mainShaddow);
+    box-shadow: 0 0 30px 0 var(--mainShaddow)
+}
+
+.gButton.red:hover {
+    color: var(--mainColorText);
+    -webkit-box-shadow: 0 0 30px 0 var(--mainShaddowHover);
+    box-shadow: 0 0 30px 0 var(--mainShaddowHover)
+}
+
+.gButton.red svg path {
+    fill: var(--mainColorText)
+}
+
+.gButton.iconized {
+    padding-left: 60px
+}
+
+.gButton.iconized svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 17px;
+    left: 25px
+}
+
+.wrap {
+    display: block;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+#topBar {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: block;
+    z-index: 300
+}
+
+#topBar .logo {
+    float: left;
+    margin-left: 5px;
+    margin-top: 18px
+}
+
+#topBar .searchBar {
+    float: right;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#topBar .searchBar input {
+    opacity: 0;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border: none;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #0b0b0e;
+    font-size: 28px;
+    padding: 0 50px;
+    font-weight: 300;
+    color: #fff;
+    z-index: 500;
+    text-align: center
+}
+
+#topBar .searchBar.active input {
+    top: 0;
+    opacity: 1
+}
+
+#topBar .searchBar svg {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 38px;
+    left: 38px;
+    z-index: 500;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer
+}
+
+#topBar .searchBar.active svg:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+#topBar .menu {
+    float: right;
+    vertical-align: top;
+    font-size: 0;
+    position: relative
+}
+
+#topBar .menu .item {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 30px;
+    line-height: 100px;
+    color: rgb(255 255 255 / .5);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative
+}
+
+#topBar .menu .item.active,
+#topBar .menu .item:hover {
+    color: rgb(255 255 255 / .9)
+}
+
+#topBar .menu .item.active::before {
+    content: "";
+    width: 12px;
+    height: 3px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 6px);
+    background: var(--mainColor);
+    -webkit-box-shadow: 0 0 5px 1px var(--mainShaddow);
+    box-shadow: 0 0 5px 1px var(--mainShaddow)
+}
+
+#topBar .arrowed {
+    padding-right: 30px
+}
+
+#topBar .item i {
+    position: absolute;
+    top: 41px;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    opacity: .6;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#topBar .arrowed:hover i {
+    opacity: 1
+}
+
+#topBar .item i::after,
+#topBar .item i::before {
+    width: 10px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    content: "";
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+#topBar .item i::after {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+    right: 7px
+}
+
+#topBar .subMenu {
+    position: fixed;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    visibility: hidden;
+    opacity: 0;
+    right: 0;
+    width: 100%;
+    font-size: 0;
+    line-height: 1;
+    padding: 20px 30px;
+    padding-bottom: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #0b0b0e
+}
+
+#topBar .arrowed.submenuActive .subMenu {
+    -webkit-transform: translate(0, 100px);
+    -ms-transform: translate(0, 100px);
+    transform: translate(0, 100px);
+    visibility: visible;
+    opacity: 1
+}
+
+#topBar .subMenu a {
+    display: inline-block;
+    width: 12.5%;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+#topBar .subMenu a:hover {
+    background: var(--mainColor);
+    -webkit-box-shadow: 0 0 30px 0 var(--mainShaddow);
+    box-shadow: 0 0 30px 0 var(--mainShaddow)
+}
+
+#mainLauncher {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+#mainLauncher .background {
+    width: 100%;
+    height: calc(100% + 100px);
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: -100px
+}
+
+#mainLauncher .hover {
+    width: 100%;
+    height: calc(100% + 100px);
+    position: absolute;
+    background: #07060a;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(var(--themeBackgroundNumbers))), color-stop(22%, rgba(var(--themeBackgroundNumbers), .95)), color-stop(58%, rgba(var(--themeBackgroundNumbers), .75)), to(rgba(var(--themeBackgroundNumbers), .65)));
+    background: -o-linear-gradient(bottom, rgb(var(--themeBackgroundNumbers)) 0, rgba(var(--themeBackgroundNumbers), .95) 22%, rgba(var(--themeBackgroundNumbers), .75) 58%, rgba(var(--themeBackgroundNumbers), .65) 100%);
+    background: linear-gradient(0deg, rgb(var(--themeBackgroundNumbers)) 0, rgba(var(--themeBackgroundNumbers), .95) 22%, rgba(var(--themeBackgroundNumbers), .75) 58%, rgba(var(--themeBackgroundNumbers), .65) 100%);
+    top: -100px
+}
+
+.moviePresent {
+    display: block;
+    position: relative;
+    color: #fff;
+    padding: 100px 20px
+}
+
+.moviePresent .runtime {
+    display: block;
+    font-size: 12px;
+    color: rgb(255 255 255 / .8);
+    font-weight: 600
+}
+
+.moviePresent .infos {
+    display: block;
+    margin-top: 20px;
+    height: 30px;
+    font-size: 0;
+    position: relative;
+    color: rgb(255 255 255 / .8)
+}
+
+.moviePresent .infos .rating {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    margin-right: 10px
+}
+
+.moviePresent .infos .rating svg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    position: relative;
+    margin-right: 3px
+}
+
+.moviePresent .infos .rating svg path {
+    fill: #eca500
+}
+
+.moviePresent .infos .rating .of {
+    font-weight: 600;
+    font-size: 10px;
+    display: inline-block;
+    display: n
+}
+
+.moviePresent .infos .contentRating,
+.moviePresent .infos .quality,
+.moviePresent .infos .year {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 5px
+}
+
+.moviePresent .infos .contentRating {
+    background: var(--mainColor);
+    border-radius: 5px;
+    padding: 0 7px;
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px
+}
+
+.moviePresent .infos b {
+    text-shadow: 0 0 15px #fff
+}
+
+.moviePresent .tit,
+.moviePresent h3 {
+    font-size: 54px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 700px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block
+}
+
+.moviePresent p {
+    font-size: 12px;
+    max-width: 700px;
+    display: block;
+    margin-bottom: 50px;
+    position: relative;
+    color: rgb(255 255 255 / .8)
+}
+
+.moviePresent .buttons {
+    display: block;
+    position: relative;
+    font-size: 0
+}
+
+.moviePresent .buttons .gButton {
+    display: inline-block;
+    margin-right: 20px
+}
+
+.moviePresent .buttons .gButton svg {
+    max-width: 12px
+}
+
+#listingHome {
+    display: block;
+    position: relative;
+    z-index: 100
+}
+
+#listingHome .options {
+    display: block;
+    height: 100px;
+    position: relative;
+    font-size: 0;
+    margin-bottom: 40px
+}
+
+#listingHome .options span {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    height: 100px;
+    opacity: .5;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+}
+
+#listingHome .options span svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+#listingHome .options span.active,
+#listingHome .options span:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.itemsList {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden
+}
+
+.itemSlider {
+    padding-left: 80px
+}
+
+.gPoster {
+    width: 180px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    padding-top: 265px
+}
+
+.gPoster .p {
+    width: 180px;
+    height: 265px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    will-change: transform;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-box-shadow: 0 0 30px 0 rgb(0 0 0 / .5);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / .5);
+    text-align: left
+}
+
+.gPoster .p:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05)
+}
+
+.gPoster .p img {
+    display: block;
+    max-width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    will-change: filter
+}
+
+.gPoster .p:hover img {
+    -webkit-filter: blur(10px) brightness(.5);
+    filter: blur(10px) brightness(.5)
+}
+
+.gPoster .p .e {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    padding: 15px 20px;
+    will-change: opacity
+}
+
+.gPoster .p:hover .e {
+    opacity: 1
+}
+
+.gPoster .p .e h3 {
+    font-size: 12px;
+    font-weight: 600
+}
+
+.gPoster .p .e .g {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    overflow: hidden !important;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block
+}
+
+.gPoster .p .e p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.gPoster .p .e .btnsa {
+    font-size: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    border-radius: 20px;
+    color: var(--mainColorText);
+    background: var(--mainColor);
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px
+}
+
+.gPoster .i {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.gPoster:hover .i {
+    -webkit-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    transform: translate(0, 10px)
+}
+
+.gPoster .i span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #fff;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block;
+    text-align: left
+}
+
+.gPoster .i .mi {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    color: rgb(255 255 255 / .4)
+}
+
+.gPoster .i .mi .y {
+    float: left
+}
+
+.gPoster .i .mi .t {
+    float: right;
+    margin-right: 30px
+}
+
+.gPoster .i .mi .r {
+    float: right;
+    color: #eca500
+}
+
+.gPoster .i .mi .r::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    top: 1px;
+    margin-right: 3px;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    opacity: .8;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUzLjg2NyA1My44NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUzLjg2NyA1My44Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0VGQ0U0QTsiIHBvaW50cz0iMjYuOTM0LDEuMzE4IDM1LjI1NiwxOC4xODIgNTMuODY3LDIwLjg4NyA0MC40LDM0LjAxMyA0My41NzksNTIuNTQ5IDI2LjkzNCw0My43OTggICAxMC4yODgsNTIuNTQ5IDEzLjQ2NywzNC4wMTMgMCwyMC44ODcgMTguNjExLDE4LjE4MiAiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
+}
+
+#recentMovie {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    -webkit-box-shadow: 0 0 30px 0 rgb(0 0 0 / .5);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / .5)
+}
+
+#recentMovie .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center
+}
+
+#recentMovie .hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #07060a;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(var(--themeBackgroundNumbers), .9)), color-stop(22%, rgba(var(--themeBackgroundNumbers), .8)), color-stop(58%, rgba(var(--themeBackgroundNumbers), .7)), to(rgba(var(--themeBackgroundNumbers), .65)));
+    background: -o-linear-gradient(bottom, rgba(var(--themeBackgroundNumbers), .9) 0, rgba(var(--themeBackgroundNumbers), .8) 22%, rgba(var(--themeBackgroundNumbers), .7) 58%, rgba(var(--themeBackgroundNumbers), .65) 100%);
+    background: linear-gradient(0deg, rgba(var(--themeBackgroundNumbers), .9) 0, rgba(var(--themeBackgroundNumbers), .8) 22%, rgba(var(--themeBackgroundNumbers), .7) 58%, rgba(var(--themeBackgroundNumbers), .65) 100%)
+}
+
+#recentMovie .moviePresent {
+    padding: 100px
+}
+
+#lastHome {
+    display: block;
+    position: relative;
+    margin-top: 50px
+}
+
+#lastHome>h3 {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase
+}
+
+#lastHome .cats {
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    overflow: hidden;
+    text-align: center
+}
+
+#lastHome .cats a {
+    display: inline-block;
+    line-height: 40px;
+    background: rgb(255 255 255 / .05);
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-right: 5px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#lastHome .cats a:hover {
+    background: var(--mainColor);
+    -webkit-box-shadow: 0 0 30px 0 var(--mainShaddow);
+    box-shadow: 0 0 30px 0 var(--mainShaddow)
+}
+
+.generalMoviesList {
+    display: block;
+    position: relative;
+    text-align: center
+}
+
+.generalMoviesList .gPoster {
+    margin: 11px;
+    margin-bottom: 30px;
+    margin-top: 0
+}
+
+footer {
+    display: block;
+    margin-top: 60px;
+    position: relative
+}
+
+footer h2 {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center
+}
+
+footer .footerLinks {
+    display: block;
+    position: relative;
+    font-size: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+footer .footerLinks .item {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    position: relative;
+    text-align: center
+}
+
+footer .footerLinks span {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px
+}
+
+footer .footerLinks a {
+    display: block;
+    line-height: 30px;
+    font-size: 14px;
+    color: rgb(255 255 255 / .4);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-weight: 300;
+    padding-left: 10px
+}
+
+footer .footerLinks a:hover {
+    color: #fff
+}
+
+footer .logoOne img {
+    margin: 40px auto;
+    display: block
+}
+
+footer ul {
+    padding-left: 0
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    max-width: 80%;
+    margin: 0 auto;
+    opacity: .5
+}
+
+footer p:first-child {
+    margin-top: 20px
+}
+
+footer .copyright {
+    font-size: 10px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    opacity: .4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 20px
+}
+
+#listingPage .titleBar {
+    width: 100%;
+    margin-top: 40px;
+    display: block;
+    margin-bottom: 40px
+}
+
+#listingPage .titleBar h1 {
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 300;
+    display: block;
+    padding-left: 10px
+}
+
+.paginationSystem {
+    display: block;
+    margin: 50px 0;
+    width: 100%;
+    position: relative;
+    font-size: 0;
+    text-align: centeR
+}
+
+.paginationSystem a {
+    width: auto;
+    display: inline-block;
+    margin: 0 10px;
+    height: 50px;
+    text-align: center;
+    font-weight: 600;
+    color: #f2f2f2;
+    background: #212126;
+    font-size: 12px;
+    padding: 0 20px;
+    line-height: 50px;
+    border-radius: 5px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 10px
+}
+
+.paginationSystem a.active {
+    background: var(--mainColorHover);
+    color: vaR(--mainColorText)
+}
+
+.paginationSystem a:hover {
+    background: var(--mainColor);
+    color: vaR(--mainColorText);
+    -webkit-box-shadow: 0 0 30px 0 var(--mainShaddow);
+    box-shadow: 0 0 30px 0 var(--mainShaddow)
+}
+
+.gTitle {
+    line-height: 70px;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 20px
+}
+
+.extraData {
+    display: block;
+    position: relative
+}
+
+#moviePage {
+    position: relative;
+    display: block;
+    height: auto
+}
+
+#moviePage .background {
+    width: 100%;
+    height: calc(100% - 100px);
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+#moviePage .hover {
+    width: 100%;
+    height: calc(100% - 100px);
+    position: absolute;
+    background: #07060a;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(var(--themeBackgroundNumbers))), color-stop(22%, rgba(var(--themeBackgroundNumbers), .95)), color-stop(58%, rgba(var(--themeBackgroundNumbers), .75)), to(rgba(var(--themeBackgroundNumbers), .65)));
+    background: -o-linear-gradient(bottom, rgb(var(--themeBackgroundNumbers)) 0, rgba(var(--themeBackgroundNumbers), .95) 22%, rgba(var(--themeBackgroundNumbers), .75) 58%, rgba(var(--themeBackgroundNumbers), .65) 100%);
+    background: linear-gradient(0deg, rgb(var(--themeBackgroundNumbers)) 0, rgba(var(--themeBackgroundNumbers), .95) 22%, rgba(var(--themeBackgroundNumbers), .75) 58%, rgba(var(--themeBackgroundNumbers), .65) 100%);
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px)
+}
+
+#moviePage .prod {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px
+}
+
+#moviePage .prod h4 {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1
+}
+
+#moviePage .moviePresent {
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    padding-bottom: 80px
+}
+
+#moviePage .moviePresent p {
+    margin-bottom: 20px;
+    font-size: 14px
+}
+
+#moviePage .moviePresent .genres {
+    display: block;
+    font-size: 0;
+    margin-bottom: 20px
+}
+
+#moviePage .moviePresent .genres a,
+#moviePage .moviePresent .genres span {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid rgb(255 255 255 / .2);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer
+}
+
+#moviePage .moviePresent .genres a:hover,
+#moviePage .moviePresent .genres span:hover {
+    background: var(--mainColor);
+    -webkit-box-shadow: 0 0 30px 0 var(--mainShaddow);
+    box-shadow: 0 0 30px 0 var(--mainShaddow)
+}
+
+#playButton {
+    position: absolute;
+    right: 200px;
+    top: calc(50% - 75px);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--mainColor);
+    -webkit-box-shadow: 0 0 30px 0 var(--mainShaddow);
+    box-shadow: 0 0 30px 0 var(--mainShaddow);
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+#playButton:hover {
+    -webkit-box-shadow: 0 0 30px 0 var(--mainColorHover);
+    box-shadow: 0 0 30px 0 var(--mainColorHover)
+}
+
+#playButton svg {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 45px;
+    left: 50px
+}
+
+#playButton svg path {
+    fill: var(--mainColorText);
+    opacity: .9
+}
+
+#moviePage.playerActive .moviePresent {
+    -webkit-transform: translate(-1000px, 0);
+    -ms-transform: translate(-1000px, 0);
+    transform: translate(-1000px, 0);
+    opacity: 0
+}
+
+#moviePage.playerActive #playButton {
+    -webkit-transform: translate(1000px, 0);
+    -ms-transform: translate(1000px, 0);
+    transform: translate(1000px, 0);
+    opacity: 0
+}
+
+#playerArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999999
+}
+
+#moviePage.playerActive #playerArea {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible
+}
+
+#moviePage.playerActive>.background {
+    opacity: .2
+}
+
+#playerArea .closeButton {
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 70px);
+    width: 140px;
+    font-weight: 800;
+    line-height: 40px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    background: var(--mainColor);
+    color: var(--mainColorText);
+    padding: 0
+}
+
+#playerArea .closeButton:hover {
+    background: var(--mainColorHover);
+    color: var(--mainColorText)
+}
+
+#playerIframe {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: calc(100% - 20px);
+    overflow: hidden
+}
+
+#playerIframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/zQN3LHb.gif) center center no-repeat;
+    background-color: #000
+}
+
+#movieText {
+    display: block;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center
+}
+
+#movieText h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 10px
+}
+
+#movieText p {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    opacity: .8
+}
+
+#socials {
+    display: block;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: 60px
+}
+
+#socials span {
+    font-size: 22px;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 30px
+}
+
+#socials a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 20px 2px rgb(0 0 0 / .4);
+    box-shadow: 0 0 20px 2px rgb(0 0 0 / .4);
+    margin: 0 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#socials a:hover {
+    opacity: .8
+}
+
+#socials a.facebook {
+    background: #5061a6
+}
+
+#socials a.twitter {
+    background: #55acef
+}
+
+#socials a.pinterest {
+    background: #d7143a
+}
+
+#socials a svg {
+    width: 32px;
+    height: 32px;
+    margin-top: 14px
+}
+
+#searchPage .searchBar {
+    height: 70px;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    display: block;
+    margin-top: 40px
+}
+
+#searchPage .searchBar .gButton {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    position: absolute;
+    border-radius: 15px;
+    top: 10px;
+    right: 10px
+}
+
+#searchPage .searchBar .gButton svg {
+    width: 22px;
+    margin-top: 14px
+}
+
+#searchPage .searchBar input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 0 30px;
+    border: none;
+    background: 0 0
+}
+
+#searchPage .noMovies {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 18px;
+    color: #fff
+}
+
+#searchPage .error {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px
+}
+
+#searchPage .generalMoviesList {
+    margin-top: 30px
+}
+
+#topBar .openTopBar {
+    position: absolute;
+    width: 30px;
+    height: 24px;
+    top: 39px;
+    right: 30px;
+    z-index: 300;
+    cursor: pointer;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    display: none
+}
+
+#topBar .openTopBar .bar {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 0;
+    background: #fff;
+    border-radius: 2px;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out
+}
+
+#topBar .openTopBar:hover .bar {
+    -webkit-box-shadow: 0 0 15px 2px var(--mainShaddow);
+    box-shadow: 0 0 15px 2px var(--mainShaddow)
+}
+
+#topBar .openTopBar .bar:nth-child(1) {
+    top: 0
+}
+
+#topBar .openTopBar .bar:nth-child(2) {
+    top: 10px
+}
+
+#topBar .openTopBar .bar:nth-child(3) {
+    top: 20px
+}
+
+#topBar .openTopBar.active .bar:nth-child(1) {
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+#topBar .openTopBar.active .bar:nth-child(2) {
+    opacity: 0
+}
+
+#topBar .openTopBar.active .bar:nth-child(3) {
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+.footerSitesLinks {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    text-align: center
+}
+
+.footerSitesLinks a {
+    display: inline-block;
+    font-size: 12px;
+    opacity: .7;
+    margin: 0 5px
+}
+
+#mainLauncher .moviePresent {
+    text-align: center
+}
+
+#mainLauncher .moviePresent h1 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 400
+}
+
+#mainLauncher .movieLogo {
+    max-height: 120px;
+    max-width: 80%;
+    width: auto
+}
+
+#mainLauncher .moviePresent p {
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 20px
+}
+
+@media only screen and (max-width:1460px) {
+    .wrap {
+        width: 97%;
+        margin: 0 auto
+    }
+
+    .extraData .gTitle {
+        padding-left: 20px
+    }
+
+    .bslider-stage {
+        padding-left: 40px !important
+    }
+}
+
+@media only screen and (max-width:1080px) {
+    #topBar .menu .item {
+        font-size: 14px;
+        margin: 0 20px
+    }
+
+    #topBar .subMenu a {
+        width: 25%;
+        font-size: 12px
+    }
+
+    #topBar .searchBar.active input {
+        font-size: 22px
+    }
+
+    #playButton {
+        right: 50px
+    }
+
+    #lastHome .cats a {
+        margin-bottom: 5px
+    }
+
+    #lastHome .cats {
+        margin-bottom: 20px !important
+    }
+}
+
+@media only screen and (max-width:980px) {
+    #topBar .openTopBar {
+        display: block
+    }
+
+    #topBar .menu {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(13 13 17 / .95);
+        z-index: 200;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out
+    }
+
+    #topBar .menu.active {
+        opacity: 1;
+        visibility: visible
+    }
+
+    #topBar .searchBar {
+        margin-right: 60px
+    }
+
+    #topBar .searchBar.active {
+        margin-right: 0
+    }
+
+    #topBar .menu .item {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        font-size: 22px
+    }
+
+    #topBar .item i {
+        position: relative;
+        display: inline-block;
+        vertical-align: top
+    }
+
+    #topBar .subMenu {
+        top: 190px;
+        z-index: 500
+    }
+
+    #topBar .subMenu a {
+        font-size: 14px
+    }
+
+    #moviePage .moviePresent {
+        padding-left: 30px
+    }
+
+    .moviePresent h2 {
+        -o-text-overflow: initial !important;
+        text-overflow: initial !important;
+        white-space: initial !important;
+        font-size: 18px !important
+    }
+
+    .moviePresent .infos {
+        height: auto !important
+    }
+
+    #searchPage .searchBar {
+        margin-top: 0;
+        width: 94%;
+        margin-left: 3%
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .moviePresent {
+        padding: 50px 30px
+    }
+
+    #recentMovie .moviePresent {
+        padding: 50px 30px !important
+    }
+
+    .moviePresent .tit,
+    .moviePresent h3 {
+        font-size: 36px;
+        max-width: 100%
+    }
+
+    .moviePresent .buttons .gButton {
+        text-transform: initial
+    }
+
+    #topBar .searchBar.active input {
+        font-size: 14px;
+        text-align: left
+    }
+
+    #topBar .searchBar.active svg {
+        left: 70px
+    }
+
+    #moviePage .moviePresent {
+        padding-top: 250px;
+        text-align: center;
+        padding-bottom: 20px
+    }
+
+    #playButton {
+        top: 60px;
+        left: calc(50% - 75px)
+    }
+
+    #listingPage .titleBar h1 {
+        font-size: 5vw
+    }
+
+    #listingPage .titleBar {
+        margin-top: 10px;
+        margin-bottom: 30px
+    }
+
+    #recentMovie {
+        margin-top: 30px;
+        border-radius: 0;
+        width: calc(100% + 6%);
+        -webkit-transform: translateX(-3%);
+        -ms-transform: translateX(-3%);
+        transform: translateX(-3%)
+    }
+
+    #recentMovie .moviePresent {
+        padding: 70px 50px
+    }
+
+    #recentMovie .moviePresent .infos {
+        margin-top: 10px
+    }
+
+    #recentMovie .moviePresent p {
+        margin-bottom: 30px
+    }
+
+    #lastHome h3 {
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 0 20px
+    }
+
+    footer {
+        margin-top: 30px
+    }
+
+    #listingPage .titleBar h1 {
+        text-align: center
+    }
+
+    #playerArea {
+        max-height: 500px
+    }
+
+    .extraData .gTitle {
+        font-size: 6vw;
+        line-height: initial
+    }
+}
+
+@media only screen and (max-width:580px) {
+    #topBar .subMenu a {
+        width: 33.3%
+    }
+
+    #listingHome .options {
+        height: 200px
+    }
+
+    #listingHome .options span {
+        width: 50%
+    }
+
+    #lastHome h1 {
+        font-size: 14px
+    }
+
+    footer .footerLinks .item {
+        text-align: center;
+        margin-bottom: 10px
+    }
+
+    .bslider-stage {
+        padding-left: 30px !important
+    }
+
+    .paginationSystem {
+        padding: 0 10px;
+        margin: 20px 0
+    }
+
+    .paginationSystem a {
+        margin: 0 5px;
+        width: calc(20% - 10px);
+        border-radius: 10px
+    }
+
+    .paginationSystem a.next,
+    .paginationSystem a.prev {
+        display: block;
+        width: calc(100% - 10px);
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+
+    #playerArea {
+        height: calc(100% - 50px);
+        background: var(--themeBackground);
+        max-height: unset;
+        position: fixed
+    }
+
+    #playerArea .closeButton {
+        width: 100%;
+        height: 50px;
+        bottom: -50px;
+        left: 0;
+        border-radius: 0;
+        line-height: 50px;
+        font-style: bold;
+        letter-spacing: 2px
+    }
+
+    #playerIframe {
+        height: 100%
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .moviePresent .buttons .gButton {
+        display: block;
+        margin: 10px auto
+    }
+
+    .gPoster {
+        width: 150px;
+        padding-top: 225px
+    }
+
+    .gPoster .p {
+        width: 150px;
+        height: 225px
+    }
+
+    .gPoster .p:hover {
+        width: 150px;
+        height: 225px
+    }
+
+    .gPoster .p .e .btnsa {
+        display: none
+    }
+
+    .itemsList {
+        height: 300px
+    }
+
+    #topBar .logo img {
+        max-width: 150px;
+        -webkit-transform: translate(15px, 7px);
+        -ms-transform: translate(15px, 7px);
+        transform: translate(15px, 7px)
+    }
+}
