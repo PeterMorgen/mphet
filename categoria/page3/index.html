@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Striker HTML5 Template">
+
+    <title>FGC FLIX | FILMES E SERIES ONLINE</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/aksVideoPlayer.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!-- Preloader-->
+    <div id="preloader" class="loader">
+        <div class="loader__container">
+            <div class="loader__film">
+                <img class="loader__film-img" src="images/film.png" alt="">
+                <img class="loader__film-img" src="images/film.png" alt="">
+            </div>
+            <img class="loader__camera" src="images/camera.png" alt="">
+        </div>
+    </div>
+    <!-- Back To Top Start -->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top"><i class="fas fa-angle-up"></i></a>
+    <!-- Main Wrapper Start -->
+    <div id="main-wrapper" class="main-wrapper overflow-hidden">
+
+        <!-- Header Area Start -->
+        <header class="large-screens">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg p-0">
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <a href="https://fgcflix.vercel.app/" class="navbar-brand m-0 p-0"><img alt="" src="logo.png"></a>
+                        <ul class="navbar-nav m-0">
+                            <li class="has-children">
+                                <a href="https://fgcflix.vercel.app/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <g fill="none" stroke="#f3ce27" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path d="M5 12H3l9-9l9 9h-2M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7">
+                                            </path>
+                                            <path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6"></path>
+                                        </g>
+                                    </svg> Pagina Inicial <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="#fff" d="m7 10l5 5l5-5z" stroke-width="0.5" stroke="#fff" />
+                                    </svg></a>
+                                <ul class="submenu">
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24">
+                                                <g fill="none" stroke="#f3ce27" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="1.5" color="#f3ce27">
+                                                    <path
+                                                        d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
+                                                    <path
+                                                        d="M6.5 16v-4m0 0V9.125c0-.116 0-.174.005-.223a1 1 0 0 1 .897-.897C7.451 8 7.509 8 7.625 8H9a2 2 0 1 1 0 4zm10.966-.777C17.292 10.527 16.478 10 15.5 10c-1.105 0-2 .672-2 1.5s.895 1.5 2 1.5s2 .672 2 1.5s-.895 1.5-2 1.5c-.982 0-1.798-.53-1.968-1.23" />
+                                                </g>
+                                            </svg> Psd Gratis <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
+                                                breve)</span></a> </li>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24">
+                                                <path fill="#f3ce27"
+                                                    d="M4 22q-.825 0-1.412-.587T2 20V8q0-.825.588-1.412T4 6h4l4-4l4 4h4q.825 0 1.413.588T22 8v12q0 .825-.587 1.413T20 22zm0-2h16V8H4zm2-2h12l-3.75-5l-3 4L9 14zm11.5-5q.625 0 1.063-.437T19 11.5t-.437-1.062T17.5 10t-1.062.438T16 11.5t.438 1.063T17.5 13m-7.4-7h3.8L12 4.1zM4 20V8z"
+                                                    stroke-width="0.5" stroke="#f3ce27" />
+                                            </svg> Wallpapers <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
+                                                breve)</span></a></li>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24">
+                                                <path fill="#f3ce27"
+                                                    d="M22 8v3h-2V8H4v10h9.78c-.4.59-.65 1.26-.74 2H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2m-3.5 5v5.21a2.5 2.5 0 1 0-1 4.79a2.5 2.5 0 0 0 2.5-2.5V15h2v-2z"
+                                                    stroke-width="0.5" stroke="#f3ce27" />
+                                            </svg> Repertorios <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
+                                                breve)</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="https://fgcflix.vercel.app/categoria/page1/"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#e7c115"
+                                            d="m19.65 6.5l-2.74-3.54l3.93-.78l.78 3.92zm-2.94.57l-2.74-3.53l-1.97.39l2.75 3.53zM4.16 5.5l-.98.19a1.995 1.995 0 0 0-1.57 2.35L2 10l4.9-.97zm7.65 2.55L9.07 4.5l-1.97.41l2.75 3.53zM4 20v-8h16v1.09c.72.12 1.39.37 2 .72V10H2v10a2 2 0 0 0 2 2h9.81c-.35-.61-.59-1.28-.72-2zm19-2.11l-2.89-.25L19 15l-1.13 2.64l-2.87.25l2.18 1.88l-.68 2.81l2.5-1.49l2.45 1.49l-.65-2.81z"
+                                            stroke-width="0.5" stroke="#e7c115" />
+                                    </svg> Filmes</a></li>
+                            <li class="menu-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 20 20">
+                                        <path fill="#f3ce27"
+                                            d="M4.5 4A2.5 2.5 0 0 0 2 6.5v7A2.5 2.5 0 0 0 4.5 16h11a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 15.5 4zM3 6.5A1.5 1.5 0 0 1 4.5 5h11A1.5 1.5 0 0 1 17 6.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 3 13.5zM15.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5m-.5 6.5a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm.5-3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5M4 6.5a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm.5 5.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5M4 9.5a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm4-1.374c0-.483.46-.783.828-.54l2.94 1.953c.31.206.31.716 0 .922l-2.94 1.953c-.367.243-.828-.057-.828-.54z"
+                                            stroke-width="0.5" stroke="#f3ce27" />
+                                    </svg> Series</a></li>
+                            <li class="menu-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="none" stroke="#f3ce27" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5">
+                                            <path
+                                                d="m8.699 10.646l-.104-.49m4.995-.55l-.104-.49M8.5 15.57c1.258.316 2.686.316 4.123-.069c1.436-.385 2.672-1.099 3.604-2.001" />
+                                            <path d="m12.587 15.637l.478.974a1.5 1.5 0 1 0 2.693-1.322l-.46-.935" />
+                                            <path
+                                                d="M3 18.562v-6.518C3 7.05 7.03 3 12 3s9 4.05 9 9.044v6.517c0 1.162-.967 2.519-2 2c-.835-.42-2.223-.52-3 0c-.874.585-2.126.585-3 0c-.885-.593-1.649-.57-2.5 0c-.874.585-2.126.585-3 0c-.777-.52-1.665-.42-2.5 0c-1.033.519-2-.838-2-2" />
+                                        </g>
+                                    </svg> Animes</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
+                                    breve)</span></li>
+                            <li class="menu-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="#f3ce27" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M17.286 21.09q-1.69.001-5.288-2.615q-3.596 2.617-5.288 2.616q-2.726 0-.495-6.8q-9.389-6.775 2.135-6.775h.076Q10.211 2 12 2q1.785 0 3.574 5.516h.076q11.525 0 2.133 6.774q2.23 6.802-.497 6.8" />
+                                    </svg> Desenhos</a> <span
+                                    style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em breve)</span></li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                                        <circle cx="17" cy="28" r="2" fill="#f3ce27" stroke-width="1"
+                                            stroke="#f3ce27" />
+                                        <path fill="#f3ce27" d="M8 20.586L13.586 15L15 16.414L9.414 22z"
+                                            stroke-width="1" stroke="#f3ce27" />
+                                        <path fill="#f3ce27"
+                                            d="M28 16.584L19.414 8H6v2h12.586l3 3L6 28.586L7.414 30L23 14.415L26.584 18L23 21.586L24.414 23L28 19.416a2.004 2.004 0 0 0 0-2.832M24.5 9A3.5 3.5 0 1 1 28 5.5A3.504 3.504 0 0 1 24.5 9m0-5A1.5 1.5 0 1 0 26 5.5A1.5 1.5 0 0 0 24.5 4"
+                                            stroke-width="1" stroke="#f3ce27" />
+                                    </svg>
+                                    Futebol</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
+                                    breve)</span>
+                            </li>
+
+                        </ul>
+                        <div class="right-nav">
+                            <div class="search-block">
+                                <form action="#" class="input-group search-bar">
+                                    <button class="search" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+                                                stroke-width="0.5" stroke="#fff" />
+                                        </svg></button>
+                                    <input type="text" placeholder="Pesquisar..." required="">
+                                </form>
+                            </div>
+                            <ul class="navbar-nav m-0">
+                                <li class="menu-item">
+
+                                </li>
+                                <li class="has-children">
+                                    <a href="javascript:void(0);"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAAAXNSR0IArs4c6QAAAqdJREFUWEftmMurzVEUxz9feYWJvA0IeZQIQyWuUh5F8hpRRiYylD/B4E6UjA1kQB4TlIlHlJluCV030k1dIuq6JcnyW7Xpyjnn99t7/363js6enr32+uz1W2vt7zqii5a6iJUebFNfqxfZromsmS0HVgGDkl7XCV5bGpjZBeAA8AMYA2YCk4Grkk7WAZ0Na2ZrgMfADGB6C6hvwCiwWdJQDnQWbAC9DyyoAPEe2CLpVYW9Lbfkwr4DFkc4H5a0JGL/X1uTYc2sHzgFTIlw7ilxTtKZCJs/W3NgvdKXJTgdkrQywS7tuTUzr/LPwKwEp2OSUuySYVcAd4CUCHmB7ZD0NvaiOWng1T0/1iEwImlRgl1aZN2RmT30VpTg9J6k7Ql2WbCHgfPAvAjHn4ATkq5F2OR3gxDdm8BeqHTpn8ANSQdTQN0mOWd/OzSzAWB9CYABA5I2poLWAhsifAnYCcxpAfPRO0ehwI7lgNYGG4B3BdW1CZgG+Gv1FLgi6W4uaK2wdcCUnZGds2UO6vy9FlgzWxh0wuwguicBXv1fgS/AG0kjueBJsGa2Dthd5OQ+wMW3V7tPB/7muwCfCnwPeevAPjW4rxeAtzsvuGex8FGwZuYVfbqQeR7BGB07nssv5jrYhdBZSZerQleCNbPVRS+9HoRLjH4t4/CO8RI4VGXkKYUNn9w/nU+tTa3nxaOxX9JgJwcdYc1sadHsnwBeQE0vF/PbJA23c1QG6019Q9OU485/JKmtkmsLa2ZrgQdtntCm+L299UnyPP5ndYLdA1wsZODcpshanPsBOC7pdiysSz+H9TY1Ucvb2VFJt/5r2L7iDzZv2N7EJ2p5Wh4pxh4fmarnrO80s62J43bq5UbbgfqBpY9Cqtcm7HqwTUS1lwZNRbXrIvsLHfi0LM+bZqkAAAAASUVORK5CYII="
+                                            alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header class="small-screen">
+            <div class="container-fluid">
+                <div class="mobile-menu">
+                    <div>
+                        <a class="navbar-brand" href="#"><img alt="" src="images/logo.png"></a>
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <nav class="mobile-navar d-xl-none">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="anime-listing.html" class="active">Listing</a></li>
+                        <li class="has-children">Detail <span class="icon-arrow"></span>
+                            <ul class="children">
+                                <li><a href="anime-detail.html">Anime Detail</a></li>
+                                <li><a href="movie-detail.html">Movie Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children">Pages <span class="icon-arrow"></span>
+                            <ul class="children">
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="./blog-detail.html">Blog Detail</a></li>
+                                <li><a href="./404.html">404</a></li>
+                                <li><a href="./coming-soon.html">Coming Soon</a></li>
+                                <li><a href="./sign-up.html">Sign Up</a></li>
+                                <li><a href="./login.html">Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Area end -->
+        <div class="page-content">
+
+            <!-- Anime Listing Area Start -->
+            <section class="trending p-40">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xxl-3">
+                            <div class="row">
+                                <div class="col-xxl-12 col-xl-4">
+                                    
+                                </div>
+                                <div class="col-xxl-12 col-xl-8">
+                                    <div class="top-anime mb-12">
+                                        <h2 class="h-30 bold color-white mb-12"></h2>
+                                        <p class="sec sm mb-24">
+                                            Mais Assistidos da Semana:
+                                        </p>
+                                        <div class="row">
+                                            
+                                            <div class="col-xxl-12 col-md-6">
+                                                <a href="https://fgcflix.vercel.app/movies/21/" class="anime-card mb-12">
+                                                    <img src="https://raw.githubusercontent.com/kermitdeveloper/imagesexport/refs/heads/main/outras/rec1.webp" alt="">
+                                                    <div class="text-block">
+                                                        <div class="sm-title">
+                                                            <h6 class="color-white">Deadpool & Wolverine
+                                                            </h6>
+                                                            <p class="color-medium-gray sm sec">221 Visualizações <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 36 36">
+                                                                <path fill="#fff" d="M33.62 17.53c-3.37-6.23-9.28-10-15.82-10S5.34 11.3 2 17.53l-.28.47l.26.48c3.37 6.23 9.28 10 15.82 10s12.46-3.72 15.82-10l.26-.48Zm-15.82 8.9C12.17 26.43 7 23.29 4 18c3-5.29 8.17-8.43 13.8-8.43S28.54 12.72 31.59 18c-3.05 5.29-8.17 8.43-13.79 8.43" class="clr-i-outline clr-i-outline-path-1" stroke-width="1" stroke="#fff" />
+                                                                <path fill="#fff" d="M18.09 11.17A6.86 6.86 0 1 0 25 18a6.86 6.86 0 0 0-6.91-6.83m0 11.72A4.86 4.86 0 1 1 23 18a4.87 4.87 0 0 1-4.91 4.89" class="clr-i-outline clr-i-outline-path-2" stroke-width="1" stroke="#fff" />
+                                                                <path fill="none" d="M0 0h36v36H0z" />
+                                                            </svg></p>
+                                                        </div>
+                                                        <ul class="tag unstyled">
+                                                            <li>Ação, Comédia, Ficção Científica</li>
+                                                            <li>2024</li>
+                                                            <li class="icon"><i class="fas fa-star"></i></li>
+                                                            <li>8.7</li>
+                                                        </ul>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-12 col-md-6">
+                                                <a href="https://fgcflix.vercel.app/movies/5/" class="anime-card mb-12">
+                                                    <img src="https://raw.githubusercontent.com/kermitdeveloper/imagesexport/refs/heads/main/outras/rec4.webp" alt="">
+                                                    <div class="text-block">
+                                                        <div class="sm-title">
+                                                            <h6 class="color-white">Um Espião e Meio
+                                                            </h6>
+                                                            <p class="color-medium-gray sm sec">115 Visualizações <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 36 36">
+                                                                <path fill="#fff" d="M33.62 17.53c-3.37-6.23-9.28-10-15.82-10S5.34 11.3 2 17.53l-.28.47l.26.48c3.37 6.23 9.28 10 15.82 10s12.46-3.72 15.82-10l.26-.48Zm-15.82 8.9C12.17 26.43 7 23.29 4 18c3-5.29 8.17-8.43 13.8-8.43S28.54 12.72 31.59 18c-3.05 5.29-8.17 8.43-13.79 8.43" class="clr-i-outline clr-i-outline-path-1" stroke-width="1" stroke="#fff" />
+                                                                <path fill="#fff" d="M18.09 11.17A6.86 6.86 0 1 0 25 18a6.86 6.86 0 0 0-6.91-6.83m0 11.72A4.86 4.86 0 1 1 23 18a4.87 4.87 0 0 1-4.91 4.89" class="clr-i-outline clr-i-outline-path-2" stroke-width="1" stroke="#fff" />
+                                                                <path fill="none" d="M0 0h36v36H0z" />
+                                                            </svg></p>
+                                                        </div>
+                                                        <ul class="tag unstyled">
+                                                            <li>Ação, Comédia</li>
+                                                            <li>2016</li>
+                                                            <li class="icon"><i class="fas fa-star"></i></li>
+                                                            <li>9.8</li>
+                                                        </ul>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-12 col-md-6">
+                                                <a href="https://fgcflix.vercel.app/movies/20/" class="anime-card mb-12">
+                                                    <img src="https://github.com/kermitdeveloper/imagesexport/blob/main/outras/rec7.png?raw=true" alt="">
+                                                    <div class="text-block">
+                                                        <div class="sm-title">
+                                                            <h6 class="color-white">De Volta à Ação
+                                                            </h6>
+                                                            <p class="color-medium-gray sm sec">320 Visualizações <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 36 36">
+                                                                <path fill="#fff" d="M33.62 17.53c-3.37-6.23-9.28-10-15.82-10S5.34 11.3 2 17.53l-.28.47l.26.48c3.37 6.23 9.28 10 15.82 10s12.46-3.72 15.82-10l.26-.48Zm-15.82 8.9C12.17 26.43 7 23.29 4 18c3-5.29 8.17-8.43 13.8-8.43S28.54 12.72 31.59 18c-3.05 5.29-8.17 8.43-13.79 8.43" class="clr-i-outline clr-i-outline-path-1" stroke-width="1" stroke="#fff" />
+                                                                <path fill="#fff" d="M18.09 11.17A6.86 6.86 0 1 0 25 18a6.86 6.86 0 0 0-6.91-6.83m0 11.72A4.86 4.86 0 1 1 23 18a4.87 4.87 0 0 1-4.91 4.89" class="clr-i-outline clr-i-outline-path-2" stroke-width="1" stroke="#fff" />
+                                                                <path fill="none" d="M0 0h36v36H0z" />
+                                                            </svg></p>
+                                                        </div>
+                                                        <ul class="tag unstyled">
+                                                            <li>Ação, Comédia</li>
+                                                            <li>2025</li>
+                                                            <li class="icon"><i class="fas fa-star"></i></li>
+                                                            <li>6.7</li>
+                                                        </ul>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-12 col-md-6">
+                                                <a href="https://fgcflix.vercel.app/movies/22/" class="anime-card mb-12">
+                                                    <img src="https://raw.githubusercontent.com/kermitdeveloper/imagesexport/refs/heads/main/outras/rec3.webp" alt="">
+                                                    <div class="text-block">
+                                                        <div class="sm-title">
+                                                            <h6 class="color-white">A Linha da Extinção
+                                                            </h6>
+                                                        </div>
+                                                        <p class="color-medium-gray sm sec">250 Visualizações <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 36 36">
+                                                            <path fill="#fff" d="M33.62 17.53c-3.37-6.23-9.28-10-15.82-10S5.34 11.3 2 17.53l-.28.47l.26.48c3.37 6.23 9.28 10 15.82 10s12.46-3.72 15.82-10l.26-.48Zm-15.82 8.9C12.17 26.43 7 23.29 4 18c3-5.29 8.17-8.43 13.8-8.43S28.54 12.72 31.59 18c-3.05 5.29-8.17 8.43-13.79 8.43" class="clr-i-outline clr-i-outline-path-1" stroke-width="1" stroke="#fff" />
+                                                            <path fill="#fff" d="M18.09 11.17A6.86 6.86 0 1 0 25 18a6.86 6.86 0 0 0-6.91-6.83m0 11.72A4.86 4.86 0 1 1 23 18a4.87 4.87 0 0 1-4.91 4.89" class="clr-i-outline clr-i-outline-path-2" stroke-width="1" stroke="#fff" />
+                                                            <path fill="none" d="M0 0h36v36H0z" />
+                                                        </svg></p>
+                                                        <ul class="tag unstyled">
+                                                            <li>Ação, Ficção Científica, Suspense</li>
+                                                            <li>2024</li>
+                                                            <li class="icon"><i class="fas fa-star"></i></li>
+                                                            <li>6.4</li>
+                                                        </ul>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xxl-12 col-md-6">
+                                                <a href="https://fgcflix.vercel.app/movies/23/" class="anime-card mb-12">
+                                                    <img src="https://github.com/kermitdeveloper/imagesexport/blob/main/outras/rec5.png?raw=true" alt="">
+                                                    <div class="text-block">
+                                                        <div class="sm-title">
+                                                            <h6 class="color-white">Conclave
+                                                            </h6>
+                                                        </div>
+                                                        <p class="color-medium-gray sm sec">450 Visualizações <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 36 36">
+                                                            <path fill="#fff" d="M33.62 17.53c-3.37-6.23-9.28-10-15.82-10S5.34 11.3 2 17.53l-.28.47l.26.48c3.37 6.23 9.28 10 15.82 10s12.46-3.72 15.82-10l.26-.48Zm-15.82 8.9C12.17 26.43 7 23.29 4 18c3-5.29 8.17-8.43 13.8-8.43S28.54 12.72 31.59 18c-3.05 5.29-8.17 8.43-13.79 8.43" class="clr-i-outline clr-i-outline-path-1" stroke-width="1" stroke="#fff" />
+                                                            <path fill="#fff" d="M18.09 11.17A6.86 6.86 0 1 0 25 18a6.86 6.86 0 0 0-6.91-6.83m0 11.72A4.86 4.86 0 1 1 23 18a4.87 4.87 0 0 1-4.91 4.89" class="clr-i-outline clr-i-outline-path-2" stroke-width="1" stroke="#fff" />
+                                                            <path fill="none" d="M0 0h36v36H0z" />
+                                                        </svg></p>
+                                                        <ul class="tag unstyled">
+                                                            <li>Suspense, Drama</li>
+                                                            <li>2024</li>
+                                                            <li class="icon"><i class="fas fa-star"></i></li>
+                                                            <li>7.9</li>
+                                                        </ul>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-xxl-12 col-md-6">
+                                                <a href="https://fgcflix.vercel.app/movies/2/" class="anime-card mb-12">
+                                                    <img src="https://github.com/kermitdeveloper/imagesexport/blob/main/outras/rec6.png?raw=true" alt="">
+                                                    <div class="text-block">
+                                                        <div class="sm-title">
+                                                            <h6 class="color-white">Minha Culpa: Londres
+                                                            </h6>
+                                                        </div>
+                                                        <p class="color-medium-gray sm sec">655 Visualizações <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 36 36">
+                                                            <path fill="#fff" d="M33.62 17.53c-3.37-6.23-9.28-10-15.82-10S5.34 11.3 2 17.53l-.28.47l.26.48c3.37 6.23 9.28 10 15.82 10s12.46-3.72 15.82-10l.26-.48Zm-15.82 8.9C12.17 26.43 7 23.29 4 18c3-5.29 8.17-8.43 13.8-8.43S28.54 12.72 31.59 18c-3.05 5.29-8.17 8.43-13.79 8.43" class="clr-i-outline clr-i-outline-path-1" stroke-width="1" stroke="#fff" />
+                                                            <path fill="#fff" d="M18.09 11.17A6.86 6.86 0 1 0 25 18a6.86 6.86 0 0 0-6.91-6.83m0 11.72A4.86 4.86 0 1 1 23 18a4.87 4.87 0 0 1-4.91 4.89" class="clr-i-outline clr-i-outline-path-2" stroke-width="1" stroke="#fff" />
+                                                            <path fill="none" d="M0 0h36v36H0z" />
+                                                        </svg></p>
+                                                        <ul class="tag unstyled">
+                                                            <li>Drama, Romance </li>
+                                                            <li>2025</li>
+                                                            <li class="icon"><i class="fas fa-star"></i></li>
+                                                            <li>6.5</li>
+                                                        </ul>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-9">
+                            <p class="sm-title mb-40">Categoria de Filmes Online</p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 mb-40">
+                                    <div class="card st-2 m-0">
+                                        <div class="img-block mb-20" style="position: relative;">
+                                            <!-- Selo NOVO -->
+                                            
+                                            
+                                            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/Ah2e9jcm2ySJq6pFvIgIX4KcVvi.jpg" alt="">
+                                            <a href="https://fgcflix.vercel.app/movies/31/" class="cus-btn light">
+                                                Assistir Agora
+                                                <i class="far fa-play"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="h-24 color-white bold">Regresso do Mal</h4>
+                                            <ul class="tag unstyled">
+                                                <li>Suspense, Terror</li>
+                                                <li>2015</li>
+                                                <li class="icon"><i class="fas fa-star"></i></li>
+                                                <li>6.5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 mb-40">
+                                    <div class="card st-2 m-0">
+                                        <div class="img-block mb-20" style="position: relative;">
+                                            <!-- Selo NOVO -->
+                                           
+                                            
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1bpUB8tGsX1LOEWuGunUwC4fBYB.jpg" alt="">
+                                            <a href="https://fgcflix.vercel.app/movies/32/" class="cus-btn light">
+                                                Assistir Agora
+                                                <i class="far fa-play"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="h-24 color-white bold">Poltergeist: O Fenômeno</h4>
+                                            <ul class="tag unstyled">
+                                                <li>Terror</li>
+                                                <li>2015</li>
+                                                <li class="icon"><i class="fas fa-star"></i></li>
+                                                <li>7.9</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 mb-40">
+                                    <div class="card st-2 m-0">
+                                        <div class="img-block mb-20" style="position: relative;">
+                                            <!-- Selo NOVO -->
+                                            
+                                            
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/urbyC5UsvP8Ym15S4Rd3sZ9WBkw.jpg" alt="">
+                                            <a href="https://fgcflix.vercel.app/movies/33/" class="cus-btn light">
+                                                Assistir Agora
+                                                <i class="far fa-play"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="h-24 color-white bold">A Babá: O Chamado das Sombras</h4>
+                                            <ul class="tag unstyled">
+                                                <li>Terror</li>
+                                                <li>2024</li>
+                                                <li class="icon"><i class="fas fa-star"></i></li>
+                                                <li>7.1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4 col-sm-6 mb-40">
+                                    <div class="card st-2 m-0">
+                                        <div class="img-block mb-20" style="position: relative;">
+                                            <!-- Selo NOVO -->
+                                           
+                                            
+                                            <img src="https://image.tmdb.org/t/p/w342/us125MW4IQOiGbnl77NgOJVEgMn.jpg" alt="">
+                                            <a href="https://fgcflix.vercel.app/movies/36/" class="cus-btn light">
+                                                Assistir Agora
+                                                <i class="far fa-play"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="h-24 color-white bold">Amor Bandido</h4>
+                                            <ul class="tag unstyled">
+                                                <li>Ação, Comédia, Romântica</li>
+                                                <li>2025</li>
+                                                <li class="icon"><i class="fas fa-star"></i></li>
+                                                <li>5.9</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 mb-40">
+                                    <div class="card st-2 m-0">
+                                        <div class="img-block mb-20" style="position: relative;">
+                                            <!-- Selo NOVO -->
+                                            
+                                            
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y484l9lN3oHIGLHL3T2Hc7vMUc1.jpg" alt="">
+                                            <a href="https://fgcflix.vercel.app/movies/34/" class="cus-btn light">
+                                                Assistir Agora
+                                                <i class="far fa-play"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="h-24 color-white bold">A Casa Profunda</h4>
+                                            <ul class="tag unstyled">
+                                                <li>Mistério, Terror</li>
+                                                <li>2021</li>
+                                                <li class="icon"><i class="fas fa-star"></i></li>
+                                                <li>7.2</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 mb-40">
+                                    <div class="card st-2 m-0">
+                                        <div class="img-block mb-20" style="position: relative;">
+                                            <!-- Selo NOVO -->
+                                            
+                                            
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/QqHtwk0oHYed26zra9WGQGyBSm.jpg" alt="">
+                                            <a href="https://fgcflix.vercel.app/movies/35/" class="cus-btn light">
+                                                Assistir Agora
+                                                <i class="far fa-play"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="h-24 color-white bold">Invasão Zumbi</h4>
+                                            <ul class="tag unstyled">
+                                                <li>Ação, Suspense, Terror</li>
+                                                <li>2021</li>
+                                                <li class="icon"><i class="fas fa-star"></i></li>
+                                                <li>7.2</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            <ul class="pagination unstyled">
+                                <li><a href="https://fgcflix.vercel.app/categoria/page2/"><i class="fas fa-chevron-left"></i></a></li>
+                                <li><a href="https://fgcflix.vercel.app/categoria/page1/" class="">1</a></li>
+                                <li><a href="https://fgcflix.vercel.app/categoria/page2/" class="">2</a></li>
+                                <li><a href="#" class="active">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Anime Listing Area end -->
+
+
+
+        </div>
+        <!-- Main Content End -->
+
+        <!-- Footer Area Start  -->
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-main">
+                    <div class="footer-info">
+                        <div class="footer-about">
+                            <div class="logo mb-40">
+                                <a href="#">
+                                    <img src="logo.png" alt="">
+                                </a>
+                            </div>
+                            <p class="light-gray h-20 light mb-48">
+                                Todos os arquivo estão hospedados <br> sob nosso domínio.
+                            </p>
+
+                            <ul class="unstyled social-icons">
+                                <li>
+                                    <a href="https://www.instagram.com/felipegravacoes_/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M16 7a1 1 0 1 1 2 0a1 1 0 0 1-2 0" stroke-width="0.5" stroke="#fff" />
+                                            <path fill="#fff" fill-rule="evenodd" d="M12 7.25a4.75 4.75 0 1 0 0 9.5a4.75 4.75 0 0 0 0-9.5M8.75 12a3.25 3.25 0 1 1 6.5 0a3.25 3.25 0 0 1-6.5 0" clip-rule="evenodd" stroke-width="0.5" stroke="#fff" />
+                                            <path fill="#fff" fill-rule="evenodd" d="M17.258 2.833a47.7 47.7 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a46 46 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.8 47.8 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a46 46 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.2 46.2 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.4 44.4 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.2 46.2 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.4 44.4 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516" clip-rule="evenodd" stroke-width="0.5" stroke="#fff" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCkbmoK3t2mOaJPi5QlIqswQ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M23 9.71a8.5 8.5 0 0 0-.91-4.13a2.92 2.92 0 0 0-1.72-1A78 78 0 0 0 12 4.27a79 79 0 0 0-8.34.3a2.87 2.87 0 0 0-1.46.74c-.9.83-1 2.25-1.1 3.45a48 48 0 0 0 0 6.48a9.6 9.6 0 0 0 .3 2a3.14 3.14 0 0 0 .71 1.36a2.86 2.86 0 0 0 1.49.78a45 45 0 0 0 6.5.33c3.5.05 6.57 0 10.2-.28a2.9 2.9 0 0 0 1.53-.78a2.5 2.5 0 0 0 .61-1a10.6 10.6 0 0 0 .52-3.4c.04-.56.04-3.94.04-4.54M9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08" stroke-width="0.5" stroke="#fff" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://discord.gg/Jv28AZQxdt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12" stroke-width="0.5" stroke="#fff" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h5 class="h-24 bold color-white mb-50">Parceiros</h5>
+                            <ul class="link unstyled">
+                                <li><a href="https://discord.gg/SV4tQJCS">City Brasil</a></li>
+                                <li><a href="https://discord.gg/Vv9mYwA6BZ">Vivendo na Fixa</a></li>
+                                <li><a href="https://www.youtube.com/channel/UCBAcygkY6LSQ5qlBMZ1zJrA">Alberth Cds</a></li>
+                                <li><a href="https://www.youtube.com/channel/UCM6DwQMJFnH-Sv8K2g-Gw_Q">Raphael atualizações</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h5 class="h-24 bold color-white mb-50">Outras Paginas</h5>
+                            <ul class="link unstyled">
+                                <li><a href="#">Psd Gratis</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
+                                    breve)</span></li>
+                                <li><a href="#">Wallpapers</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
+                                    breve)</span></li>
+                                <li><a href="#">Repertorios</a> <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em
+                                    breve)</span></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h5 class="h-24 bold color-white mb-24">Equipe SoundGrave</h5>
+                            <ul class="link unstyled">
+                                <li><a href="https://discord.gg/rG5xUKcv3s">Acessar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="color-white text-center copyright">Felipe Gravações Community © Copyright 2025</p>
+            </div>
+        </footer>
+        <!-- Footer Area End  -->
+
+        <!-- modal-popup area start  -->
+        <div class="modal fade" id="videoModal" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="top_bar">
+                        <h4 class="modal-title">Demon Slayer Season 4</h4>
+                        <button type="button" class="close" id="closeVideoModalButton" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i> <b>Close</b></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <video controls="" title="Video">
+                            <source src="media/movie-video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal-popup area end  -->
+
+    </div>
+
+    <!-- Jquery Js -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-appear.js"></script>
+    <script src="js/jquery-validator.js"></script>
+    <script src="js/aksVideoPlayer.js"></script>
+
+    <!-- Site Scripts -->
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
