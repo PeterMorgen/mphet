@@ -236,13 +236,19 @@
 </span>
 
 <script>
-    const intervalo = 60000; // 1 minuto (60.000 milissegundos)
-    const numeroInicial = 0; // Começar no 0
+    const intervalo = 60000; // 1 minuto
+    const numeroInicial = 0; // Sempre começar no 0
 
-    // Carrega o número salvo ou começa no 0
-    let numeroVisualizacoes = parseInt(localStorage.getItem('visualizacoes'));
-    if (isNaN(numeroVisualizacoes)) {
+    // Verifica se já existe o número salvo
+    let numeroVisualizacoes = localStorage.getItem('visualizacoes');
+
+    if (numeroVisualizacoes === null) {
+        // Se não existir, começa do 0
         numeroVisualizacoes = numeroInicial;
+        localStorage.setItem('visualizacoes', numeroVisualizacoes);
+    } else {
+        // Se existir, converte para número
+        numeroVisualizacoes = parseInt(numeroVisualizacoes);
     }
 
     function mostrarVisualizacoes() {
@@ -266,6 +272,7 @@
         atualizarNumero();
     }, intervalo);
 </script>
+
 
                                     
                                     
