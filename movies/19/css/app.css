@@ -250,12 +250,12 @@ strong {
   font-weight: 400;
 }
 .pagination li a.active {
-  background: #f3ce27;
+  background: #ddbe58;
   color: #212020;
 }
 .pagination li a:hover {
   color: #212020;
-  background: #f3ce27;
+  background: V
 }
 
 .social-icons {
@@ -277,10 +277,10 @@ strong {
   transition: all 0.5s ease-in-out;
 }
 .social-icons li a:hover {
-  color: #f3ce27;
+  color: #ddbe58;
 }
 .social-icons li a:hover svg {
-  fill: #f3ce27;
+  fill: #ddbe58;
 }
 
 /*-------------------------
@@ -339,8 +339,9 @@ Helpers
 }
 
 .color-medium-gray {
-  color: #9EA2A8 !important;
+  color: #ffffff !important;
 }
+
 
 .dark-gray {
   color: #7A7F85 !important;
@@ -1144,9 +1145,7 @@ Helpers
   }
 }
 
-.p-40 {
-  padding: 40px 0;
-}
+
 @media (max-width: 1199px) {
   .p-40 {
     padding: 32px 0;
@@ -1379,7 +1378,7 @@ Elements
 .cus-btn.primary:hover {
   background-color: #f3ce27;
   color: #1B1B1B;
-  box-shadow: 0px 0px 30px 5px rgba(170, 159, 4, 0.8);
+  box-shadow: 0px 0px 30px 5px rgba(168, 124, 3, 0.8);
 }
 .cus-btn.space {
   padding: 12px 24px;
@@ -1418,10 +1417,10 @@ Elements
 }
 .cus-btn.light {
   padding: 14px 20px;
-  background: rgba(87, 87, 87, 0.39);
+  background: rgb(103 97 97 / 19%);
   box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(25px);
-  color: #F8F8FF;
+  color: #e7c115;
   font-size: 18px;
   font-weight: 600;
   line-height: 130%;
@@ -1436,7 +1435,7 @@ Elements
   }
 }
 .cus-btn.light:hover {
-  color: #f3ce27;
+  color: #e7c115;
 }
 .cus-btn.sm-light {
   font-size: 14px;
@@ -1450,7 +1449,7 @@ Elements
   transition: all 0.5s ease-in-out;
 }
 .cus-btn.grey:hover {
-  background: #f3ce27;;
+  background: #f3ce27;
 }
 .cus-btn.dark {
   background-color: #1B1B1B;
@@ -1470,7 +1469,7 @@ Elements
   gap: 10px;
   font-family: "Open Sans", sans-serif;
   border-radius: 15px;
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: 600;
   line-height: 120%;
   /* 24px */
@@ -1488,7 +1487,7 @@ Elements
   color: #f3ce27;
 }
 .light-btn.primary:hover {
-  box-shadow: 0px 0px 30px 5px rgba(163, 134, 4, 0.8);
+  box-shadow: 0px 0px 30px 5px rgba(197, 168, 5, 0.8);
 }
 
 .cus-btn-2 {
@@ -1512,7 +1511,7 @@ Elements
 }
 .cus-btn-2:hover {
   border-color: #f3ce27;
-  box-shadow: 0px 0px 30px 5px rgba(206, 170, 9, 0.8);
+  box-shadow: 0px 0px 30px 5px rgba(211, 180, 8, 0.8);
 }
 
 .modal {
@@ -2599,7 +2598,7 @@ footer {
   margin-top: 40px;
   padding-top: 100px;
   padding-bottom: 40px;
-  background: url(../images/bg.png);
+  background: url(../images/bg_2.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2848,7 +2847,7 @@ footer .copyright {
   width: 100%;
 }
 .hero-banner-1 .anime-card {
-  background: url(../images/bg_1.png);
+  background: url(https://raw.githubusercontent.com/kermitdeveloper/imagesexport/refs/heads/main/destak_3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -3573,16 +3572,7 @@ footer .copyright {
 .trending.st-2 .card-slider {
   position: relative;
 }
-.trending.st-2 .card-slider::before {
-  content: "";
-  position: absolute;
-  right: -62px;
-  width: 234px;
-  height: 244px;
-  flex-shrink: 0;
-  z-index: 888;
-  background: linear-gradient(274deg, #181818 37.59%, rgba(24, 24, 24, 0.9) 56%, rgba(24, 24, 24, 0) 85.96%);
-}
+
 @media (max-width: 1499px) {
   .trending.st-2 .card-slider::before {
     width: 220px;
@@ -3751,7 +3741,7 @@ footer .copyright {
 .comming-soon .content {
   display: flex;
   gap: 40px;
-  background: url(../images/bg_2.png);
+  background: url(destak2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
@@ -3893,15 +3883,12 @@ footer .copyright {
   border-radius: 12px;
   border: 1px solid #292929;
 }
-.comming-soon .content .details .tag li {
-  color: #9EA2A8;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 120%;
-  padding-left: 8px;
-  margin-left: 8px;
-  border-left: 1px solid #43464B;
+.comming-soon .content .details .tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #ffffff;
 }
 .comming-soon .content .details .tag li.icon {
   padding: 0 4px 0 12px;
