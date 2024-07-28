@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Striker HTML5 Template">
+
+    <title>FGC FLIX | FILMES E SERIES ONLINE</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/aksVideoPlayer.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!-- Preloader-->
+    <div id="preloader" class="loader">
+        <div class="loader__container">
+            <div class="loader__film">
+                <img class="loader__film-img" src="images/film.png" alt="">
+                <img class="loader__film-img" src="images/film.png" alt="">
+            </div>
+            <img class="loader__camera" src="images/camera.png" alt="">
+        </div>
+    </div>
+    <!-- Back To Top Start -->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top"><i class="fas fa-angle-up"></i></a>
+    <!-- Main Wrapper Start -->
+    <div id="main-wrapper" class="main-wrapper overflow-hidden">
+
+        <!-- Header Area Start -->
+        <header class="large-screens">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg p-0">
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <a href="" class="navbar-brand m-0 p-0"><img alt="" src="logo.png"></a>
+                        <ul class="navbar-nav m-0">
+                            <li class="menu-item"><a href="./index.html" class="active"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="none" stroke="#f3ce27" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path d="M5 12H3l9-9l9 9h-2M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+                                            <path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6" />
+                                        </g>
+                                    </svg> Pagina Inicial</a></li>
+                            <li class="menu-item"><a href="./anime-listing.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#e7c115"
+                                            d="m19.65 6.5l-2.74-3.54l3.93-.78l.78 3.92zm-2.94.57l-2.74-3.53l-1.97.39l2.75 3.53zM4.16 5.5l-.98.19a1.995 1.995 0 0 0-1.57 2.35L2 10l4.9-.97zm7.65 2.55L9.07 4.5l-1.97.41l2.75 3.53zM4 20v-8h16v1.09c.72.12 1.39.37 2 .72V10H2v10a2 2 0 0 0 2 2h9.81c-.35-.61-.59-1.28-.72-2zm19-2.11l-2.89-.25L19 15l-1.13 2.64l-2.87.25l2.18 1.88l-.68 2.81l2.5-1.49l2.45 1.49l-.65-2.81z"
+                                            stroke-width="0.5" stroke="#e7c115" />
+                                    </svg> Filmes</a></li>
+                            <li class="menu-item"><a href="./anime-listing.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 20 20">
+                                        <path fill="#f3ce27"
+                                            d="M4.5 4A2.5 2.5 0 0 0 2 6.5v7A2.5 2.5 0 0 0 4.5 16h11a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 15.5 4zM3 6.5A1.5 1.5 0 0 1 4.5 5h11A1.5 1.5 0 0 1 17 6.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 3 13.5zM15.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5m-.5 6.5a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm.5-3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5M4 6.5a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm.5 5.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5M4 9.5a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm4-1.374c0-.483.46-.783.828-.54l2.94 1.953c.31.206.31.716 0 .922l-2.94 1.953c-.367.243-.828-.057-.828-.54z"
+                                            stroke-width="0.5" stroke="#f3ce27" />
+                                    </svg> Series</a></li>
+                            <li class="menu-item"><a href="./anime-listing.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="none" stroke="#f3ce27" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5">
+                                            <path
+                                                d="m8.699 10.646l-.104-.49m4.995-.55l-.104-.49M8.5 15.57c1.258.316 2.686.316 4.123-.069c1.436-.385 2.672-1.099 3.604-2.001" />
+                                            <path d="m12.587 15.637l.478.974a1.5 1.5 0 1 0 2.693-1.322l-.46-.935" />
+                                            <path
+                                                d="M3 18.562v-6.518C3 7.05 7.03 3 12 3s9 4.05 9 9.044v6.517c0 1.162-.967 2.519-2 2c-.835-.42-2.223-.52-3 0c-.874.585-2.126.585-3 0c-.885-.593-1.649-.57-2.5 0c-.874.585-2.126.585-3 0c-.777-.52-1.665-.42-2.5 0c-1.033.519-2-.838-2-2" />
+                                        </g>
+                                    </svg> Animes</a></li>
+                            <li class="menu-item"><a href="./anime-listing.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="#f3ce27" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M17.286 21.09q-1.69.001-5.288-2.615q-3.596 2.617-5.288 2.616q-2.726 0-.495-6.8q-9.389-6.775 2.135-6.775h.076Q10.211 2 12 2q1.785 0 3.574 5.516h.076q11.525 0 2.133 6.774q2.23 6.802-.497 6.8" />
+                                    </svg> Desenhos</a></li>
+                            <li class="menu-item">
+                                <a href="./anime-listing.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                                        <circle cx="17" cy="28" r="2" fill="#f3ce27" stroke-width="1"
+                                            stroke="#f3ce27" />
+                                        <path fill="#f3ce27" d="M8 20.586L13.586 15L15 16.414L9.414 22z"
+                                            stroke-width="1" stroke="#f3ce27" />
+                                        <path fill="#f3ce27"
+                                            d="M28 16.584L19.414 8H6v2h12.586l3 3L6 28.586L7.414 30L23 14.415L26.584 18L23 21.586L24.414 23L28 19.416a2.004 2.004 0 0 0 0-2.832M24.5 9A3.5 3.5 0 1 1 28 5.5A3.504 3.504 0 0 1 24.5 9m0-5A1.5 1.5 0 1 0 26 5.5A1.5 1.5 0 0 0 24.5 4"
+                                            stroke-width="1" stroke="#f3ce27" />
+                                    </svg>
+                                    Futebol
+                                    <span style="font-size: 10px; color: #ccc; margin-left: 4px;">(Em breve)</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="right-nav">
+                            <div class="search-block">
+                                <form action="anime-listing.html" class="input-group search-bar">
+                                    <button class="search" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+                                                stroke-width="0.5" stroke="#fff" />
+                                        </svg></button>
+                                    <input type="text" placeholder="Pesquisar..." required="">
+                                </form>
+                            </div>
+                            <ul class="navbar-nav m-0">
+                                <li class="menu-item">
+
+                                </li>
+                                <li class="has-children">
+                                    <a href="javascript:void(0);"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAAAXNSR0IArs4c6QAAAqdJREFUWEftmMurzVEUxz9feYWJvA0IeZQIQyWuUh5F8hpRRiYylD/B4E6UjA1kQB4TlIlHlJluCV030k1dIuq6JcnyW7Xpyjnn99t7/363js6enr32+uz1W2vt7zqii5a6iJUebFNfqxfZromsmS0HVgGDkl7XCV5bGpjZBeAA8AMYA2YCk4Grkk7WAZ0Na2ZrgMfADGB6C6hvwCiwWdJQDnQWbAC9DyyoAPEe2CLpVYW9Lbfkwr4DFkc4H5a0JGL/X1uTYc2sHzgFTIlw7ilxTtKZCJs/W3NgvdKXJTgdkrQywS7tuTUzr/LPwKwEp2OSUuySYVcAd4CUCHmB7ZD0NvaiOWng1T0/1iEwImlRgl1aZN2RmT30VpTg9J6k7Ql2WbCHgfPAvAjHn4ATkq5F2OR3gxDdm8BeqHTpn8ANSQdTQN0mOWd/OzSzAWB9CYABA5I2poLWAhsifAnYCcxpAfPRO0ehwI7lgNYGG4B3BdW1CZgG+Gv1FLgi6W4uaK2wdcCUnZGds2UO6vy9FlgzWxh0wuwguicBXv1fgS/AG0kjueBJsGa2Dthd5OQ+wMW3V7tPB/7muwCfCnwPeevAPjW4rxeAtzsvuGex8FGwZuYVfbqQeR7BGB07nssv5jrYhdBZSZerQleCNbPVRS+9HoRLjH4t4/CO8RI4VGXkKYUNn9w/nU+tTa3nxaOxX9JgJwcdYc1sadHsnwBeQE0vF/PbJA23c1QG6019Q9OU485/JKmtkmsLa2ZrgQdtntCm+L299UnyPP5ndYLdA1wsZODcpshanPsBOC7pdiysSz+H9TY1Ucvb2VFJt/5r2L7iDzZv2N7EJ2p5Wh4pxh4fmarnrO80s62J43bq5UbbgfqBpY9Cqtcm7HqwTUS1lwZNRbXrIvsLHfi0LM+bZqkAAAAASUVORK5CYII="
+                                            alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header class="small-screen">
+            <div class="container-fluid">
+                <div class="mobile-menu">
+                    <div>
+                        <a class="navbar-brand" href="index.html"><img alt="" src="images/logo.png"></a>
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <nav class="mobile-navar d-xl-none">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="anime-listing.html">Listing</a></li>
+                        <li class="has-children">Detail <span class="icon-arrow"></span>
+                            <ul class="children">
+                                <li><a href="anime-detail.html">Anime Detail</a></li>
+                                <li><a href="movie-detail.html">Movie Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children">Pages <span class="icon-arrow"></span>
+                            <ul class="children">
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="./blog-detail.html">Blog Detail</a></li>
+                                <li><a href="./404.html">404</a></li>
+                                <li><a href="./coming-soon.html">Coming Soon</a></li>
+                                <li><a href="./sign-up.html">Sign Up</a></li>
+                                <li><a href="./login.html">Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Area end -->
+
+        <!-- Hero Banner start -->
+        <div class="hero-banner-1 p-40">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xxl-8 mb-30 mb-xxl-0">
+                        <div class="anime-card ">
+                            <div class="content">
+                                <img src="https://image.tmdb.org/t/p/original/9FS6TBIn2xphFWrz7KbVcCltcjD.png"
+                                    class="logo" alt="">
+                                <h2 class="h-40 bold color-white mb-16">Paddington: <br> Uma Aventura na Floresta</h2>
+                                <ul class="tag unstyled mb-24">
+                                    <li>18+</li>
+                                    <li>HD</li>
+                                    <li>2029</li>
+                                    <li>Anime</li>
+                                    <li>1hr 45m</li>
+                                </ul>
+                                <p class="color-white mb-32"><b class="color-medium-gray">Sinopse: </b>Paddington viaja
+                                    para o Peru para visitar sua amada tia Lucy. Com a família Brown a tiracolo, uma
+                                    aventura emocionante acontece quando um mistério os mergulha em uma jornada
+                                    inesperada pela floresta amazônica e até os picos das montanhas do Peru.</p>
+                                <div class="btn-block">
+                                    <a href="movie/1/"
+                                        class="cus-btn primary">
+                                        <i class="far fa-play"></i>
+                                        Assistir Agora
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4">
+                        <div class="row">
+                            <div class="col-xxl-12 col-xl-6 col-12">
+                                <div class="anime-sm-card mb-30">
+                                    <img src="img-2.png" class="br-12" alt="">
+                                    <div class="content">
+                                        <h4 class="h-30 color-white mb-8">Minha Culpa: Londres</h4>
+                                        <ul class="tag unstyled mb-16">
+                                            <li>2025</li>
+                                            <li>Romance, Drama </li>
+                                        </ul>
+                                        <p class=" sm color-medium-gray">Noah, de 18 anos, se muda dos EUA para Londres
+                                            com a mãe, que recentemente se apaixonou por William, um rico empresário
+                                            britânico. Noah conhece o filho de William, o bad boy Nick, e logo descobre
+                                            uma atração que nenhum dos dois consegue evitar. Enquanto Noah passa o verão
+                                            tentando se ajustar à nova vida, seu passado devastador a atingirá em cheio
+                                            justo quando se apaixona pela primeira vez.</p>
+                                        <a href="movie/2" 
+                                            class="cus-btn primary space">
+                                            <i class="far fa-play"></i>
+                                            Assistir Agora
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-12 col-xl-6 col-12">
+                                <div class="anime-sm-card">
+                                    <img src="img-1.png" class="br-12" alt="">
+                                    <div class="content">
+                                        <h4 class="h-30 color-white mb-8">Leo</h4>
+                                        <ul class="tag unstyled mb-16">
+                                            <li>2023</li>
+                                            <li>Animação, Comédia, Família </li>
+                                        </ul>
+                                        <p class=" sm color-medium-gray">Uma comédia musical que narra o último ano do
+                                            Ensino Fundamental pelos olhos do lagarto Leo, o bichinho de estimação da
+                                            sala.</p>
+                                        <a href="movie/3/" 
+                                            class="cus-btn primary space">
+                                            <i class="far fa-play"></i>
+                                            Assistir Agora
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Start -->
+        <div class="page-content">
+            <!-- Categories Area Start -->
+
+            <!-- Categories Area End -->
+
+            <!-- trending Area Start -->
+            <section class="trending p-40">
+                <div class="container-fluid">
+                    <div class="heading mb-32">
+                        <h2 class="h-40 bold">Top Filmes mais assistidos</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-4 col-sm-6 mb-30 mb-xl-0">
+                            <div class="card">
+                                <div class="img-block mb-30">
+                                    <img src="https://image.tmdb.org/t/p/w500/4LPIIwWiedwHeWgRXOjcBaL1tnv.jpg" alt="">
+                                    <a href="movie/4/" class="cus-btn light">
+                                        Assistir Agora
+                                        <i class="far fa-play"></i>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="list">1.</div>
+                                    <div class="name">
+                                        <h4 class="h-24 color-white bold">Ameaça no Ar</h4>
+                                        <h6 class="h-20 color-medium-gray ">Ação, Crime, Thriller</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-sm-6 mb-30 mb-xl-0">
+                            <div class="card">
+                                <div class="img-block mb-30">
+                                    <img src="https://image.tmdb.org/t/p/w500/j24zrqp8RdDKsuvNDqrAkbBjCxC.jpg" alt="">
+                                    <a href="movie/5/" class="cus-btn light">
+                                        Assistir Agora
+                                        <i class="far fa-play"></i>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="list">2.</div>
+                                    <div class="name">
+                                        <h4 class="h-24 color-white bold">Um Espião e Meio</h4>
+                                        <h6 class="h-20 color-medium-gray ">Ação, Comédia</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-sm-6 mb-30 mb-sm-0">
+                            <div class="card">
+                                <div class="img-block mb-30">
+                                    <img src="https://embedder.net/uploads/posters/1745340525_0ff236a2b2f2236b4941.jpeg" alt="">
+                                    <a href="movie/6/" class="cus-btn light">
+                                        Assistir Agora
+                                        <i class="far fa-play"></i>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="list">3.</div>
+                                    <div class="name">
+                                        <h4 class="h-24 color-white bold">iHostage</h4>
+                                        <h6 class="h-20 color-medium-gray ">Animacao, Aventura, Comedia, Familia,
+                                            Fantasia</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-sm-6 d-xxl-block d-xl-none d-lg-block">
+                            <div class="card">
+                                <div class="img-block mb-30">
+                                    <img src="https://image.tmdb.org/t/p/w500/mUBxeBpI5xg66YhLJxg8Ppv0ArW.jpg" alt="">
+                                    <a href="movie/7/" class="cus-btn light">
+                                        Assistir Agora
+                                        <i class="far fa-play"></i>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="list">4.</div>
+                                    <div class="name">
+                                        <h4 class="h-24 color-white bold">O Estado Elétrico</h4>
+                                        <h6 class="h-20 color-medium-gray ">Aventura, Drama, Ficção científica</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- treading Area End -->
+
+            <!-- Continue Area Start -->
+
+            <!-- Continue Area End -->
+
+            <!-- Recently Area Start -->
+
+            <!-- Recently Area Start -->
+
+            <!-- Coming Soon Area Start -->
+            <section class="comming-soon p-40">
+                <div class="container-fluid">
+                    <div class="content">
+                        <img src="https://image.tmdb.org/t/p/w300/4VtkIaj76TpQNfhDHXQDdT9uBN5.jpg" alt="">
+                        <div class="details">
+                            <h4 class="h-20 bold color-primary mb-8">Em breve em nosso Site</h4>
+                            <h2 class="h-40 bold color-white mb-12">Minecraft</h2>
+                            <p class="color-medium-gray mb-24">Quatro desajustados enfrentam problemas comuns do dia a
+                                dia quando, de repente, são sugados por um portal misterioso para o Overworld: uma terra
+                                fascinante e cúbica, movida pela imaginação. Para voltarem para casa, eles precisarão
+                                dominar esse novo mundo enquanto embarcam em uma jornada mágica ao lado de um crafter
+                                experiente e inesperado: Steve.</p>
+                            <ul class="tag unstyled mb-24">
+                                <li>Comedia, Aventura, Fantasia</li>
+                                <li>2025</li>
+                                <li class="icon"><i class="fas fa-star"></i></li>
+                                <li>9.5</li>
+                            </ul>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal" class="cus-btn primary">
+                                <i class="far fa-play"></i>
+                                Ver Trailer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Coming Soon Area End -->
+
+            <!-- Trailer Area Start -->
+
+            <!-- Trailer Area End -->
+
+            <!-- Top Area Start -->
+            <section class="trending st-2 p-40">
+                <div class="container-fluid">
+                    <h2 class="h-40 mb-40 bold">Top Filmes Antigos</h2>
+                    <div class="card-slider ">
+                        <div class="card st-2">
+                            <div class="img-block mb-20">
+                                <img src="https://image.tmdb.org/t/p/original/oU0COiWBUt370M8Qm8LZfkXlyjM.jpg" alt="">
+                                <a href="./movie-detail.html" class="cus-btn light">
+                                    Stream Now
+                                    <i class="far fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="h-24 color-white bold">Steins Gate</h4>
+                                <ul class="tag unstyled">
+                                    <li>Action</li>
+                                    <li>2021</li>
+                                    <li>EP-24</li>
+                                    <li class="icon"><i class="fas fa-star"></i></li>
+                                    <li>8.5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card st-2">
+                            <div class="img-block mb-20">
+                                <img src="https://image.tmdb.org/t/p/w500/oNyEYVm295JdZXbRi40XcqjOs7G.jpg" alt="">
+                                <a href="./movie-detail.html" class="cus-btn light">
+                                    Stream Now
+                                    <i class="far fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="h-24 color-white bold">Hells Paradise</h4>
+                                <ul class="tag unstyled">
+                                    <li>Action</li>
+                                    <li>2021</li>
+                                    <li>EP-24</li>
+                                    <li class="icon"><i class="fas fa-star"></i></li>
+                                    <li>8.5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card st-2">
+                            <div class="img-block mb-20">
+                                <img src="https://image.tmdb.org/t/p/w500/3xa4VLDaWdH44zxuUPikPBfTl9M.jpg" alt="">
+                                <a href="./movie-detail.html" class="cus-btn light">
+                                    Stream Now
+                                    <i class="far fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="h-24 color-white bold">Demon Slayer</h4>
+                                <ul class="tag unstyled">
+                                    <li>Action</li>
+                                    <li>2021</li>
+                                    <li>EP-24</li>
+                                    <li class="icon"><i class="fas fa-star"></i></li>
+                                    <li>8.5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card st-2">
+                            <div class="img-block mb-20">
+                                <img src="https://image.tmdb.org/t/p/w500/us9UowVdxrH0l4bVleBeCVMsW2i.jpg" alt="">
+                                <a href="./movie-detail.html" class="cus-btn light">
+                                    Stream Now
+                                    <i class="far fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="h-24 color-white bold">Arcane</h4>
+                                <ul class="tag unstyled">
+                                    <li>Action</li>
+                                    <li>2021</li>
+                                    <li>EP-24</li>
+                                    <li class="icon"><i class="fas fa-star"></i></li>
+                                    <li>8.5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card st-2">
+                            <div class="img-block mb-20">
+                                <img src="https://image.tmdb.org/t/p/w500/g84Os8iaDJNs51oNo1VtATGpbOV.jpg" alt="">
+                                <a href="./movie-detail.html" class="cus-btn light">
+                                    Stream Now
+                                    <i class="far fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="h-24 color-white bold">Fate Stay Night</h4>
+                                <ul class="tag unstyled">
+                                    <li>Action</li>
+                                    <li>2021</li>
+                                    <li>EP-24</li>
+                                    <li class="icon"><i class="fas fa-star"></i></li>
+                                    <li>8.5</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card st-2">
+                            <div class="img-block mb-20">
+                                <img src="https://image.tmdb.org/t/p/w500/e1hxniKMiRIpGiad0BCATn4d8uv.jpg" alt="">
+                                <a href="./movie-detail.html" class="cus-btn light">
+                                    Stream Now
+                                    <i class="far fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="h-24 color-white bold">Fate Stay Night</h4>
+                                <ul class="tag unstyled">
+                                    <li>Action</li>
+                                    <li>2021</li>
+                                    <li>EP-24</li>
+                                    <li class="icon"><i class="fas fa-star"></i></li>
+                                    <li>8.5</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card st-2">
+                            <div class="img-block mb-20">
+                                <img src="https://image.tmdb.org/t/p/w500/4YOIHjTJa89LEFmrP8eEmJT2ggp.jpg" alt="">
+                                <a href="./movie-detail.html" class="cus-btn light">
+                                    Stream Now
+                                    <i class="far fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="h-24 color-white bold">Fate Stay Night</h4>
+                                <ul class="tag unstyled">
+                                    <li>Action</li>
+                                    <li>2021</li>
+                                    <li>EP-24</li>
+                                    <li class="icon"><i class="fas fa-star"></i></li>
+                                    <li>8.5</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card st-2">
+                            <div class="img-block mb-20">
+                                <img src="https://image.tmdb.org/t/p/w500/o1BtZCp1t7ZpLJu9lLEJ4STKUR3.jpg" alt="">
+                                <a href="./movie-detail.html" class="cus-btn light">
+                                    Stream Now
+                                    <i class="far fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="h-24 color-white bold">Fate Stay Night</h4>
+                                <ul class="tag unstyled">
+                                    <li>Action</li>
+                                    <li>2021</li>
+                                    <li>EP-24</li>
+                                    <li class="icon"><i class="fas fa-star"></i></li>
+                                    <li>8.5</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card st-2">
+                            <div class="img-block mb-20">
+                                <img src="https://image.tmdb.org/t/p/w500/mxopI5VyShCeAlJf3X4Q1T40Bub.jpg" alt="">
+                                <a href="./movie-detail.html" class="cus-btn light">
+                                    Stream Now
+                                    <i class="far fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="h-24 color-white bold">Fate Stay Night</h4>
+                                <ul class="tag unstyled">
+                                    <li>Action</li>
+                                    <li>2021</li>
+                                    <li>EP-24</li>
+                                    <li class="icon"><i class="fas fa-star"></i></li>
+                                    <li>8.5</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Top Area Start -->
+
+            <!-- Recently Area Start -->
+
+            <!-- Recently Area Start -->
+
+        </div>
+
+        <!-- Main Content End -->
+
+        <!-- Footer Area Start  -->
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-main">
+                    <div class="footer-info">
+                        <div class="footer-about">
+                            <div class="logo mb-40">
+                                <a href="#">
+                                    <img src="logo.png" alt="">
+                                </a>
+                            </div>
+                            <p class="light-gray h-20 light mb-48">
+                                Todos os arquivo estão hospedados <br> sob nosso domínio.
+                            </p>
+
+                            <ul class="unstyled social-icons">
+                                <li>
+                                    <a href="index.html"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M17.624 5.625C18.0121 5.625 18.3271 5.31 18.3271 4.92188V0.703125C18.3271 0.315 18.0121 0 17.624 0H13.4053C10.6912 0 8.4834 2.20781 8.4834 4.92188V8.4375H6.37402C5.9859 8.4375 5.6709 8.7525 5.6709 9.14062V13.3594C5.6709 13.7475 5.9859 14.0625 6.37402 14.0625H8.4834V23.2969C8.4834 23.685 8.7984 24 9.18652 24H13.4053C13.7934 24 14.1084 23.685 14.1084 23.2969V14.0625H16.9209C17.2645 14.0625 17.5579 13.8141 17.6146 13.4752L18.3178 9.25641C18.3515 9.0525 18.2943 8.84391 18.1607 8.68594C18.0271 8.52844 17.8307 8.4375 17.624 8.4375H14.1084V5.625H17.624ZM13.4053 9.84375H16.7939L16.3251 12.6562H13.4053C13.0171 12.6562 12.7021 12.9713 12.7021 13.3594V22.5938H9.88965V13.3594C9.88965 12.9713 9.57465 12.6562 9.18652 12.6562H7.07715V9.84375H9.18652C9.57465 9.84375 9.88965 9.52875 9.88965 9.14062V4.92188C9.88965 2.98359 11.467 1.40625 13.4053 1.40625H16.9209V4.21875H13.4053C13.0171 4.21875 12.7021 4.53375 12.7021 4.92188V9.14062C12.7021 9.52875 13.0171 9.84375 13.4053 9.84375Z"
+                                                fill="#7A7F85"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M13.866 10.3108L22.6084 0.148438H20.5368L12.9457 8.97227L6.88278 0.148438H-0.110107L9.05826 13.4916L-0.110107 24.1484H1.96169L9.97803 14.8302L16.3809 24.1484H23.3738L13.8655 10.3108H13.866ZM11.0284 13.6092L10.0995 12.2805L2.70818 1.70805H5.89033L11.8552 10.2404L12.7841 11.569L20.5378 22.6598H17.3556L11.0284 13.6097V13.6092Z"
+                                                fill="#7A7F85"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h5 class="h-24 bold color-white mb-50">Parceiros</h5>
+                            <ul class="link unstyled">
+                                <li><a href="./movie-detail.html">Movies</a></li>
+                                <li><a href="">Newsletter</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h5 class="h-24 bold color-white mb-50">Outras Paginas</h5>
+                            <ul class="link unstyled">
+                                <li><a href="./sign-up.html">Sign up</a></li>
+                                <li><a href="./login.html">Login</a></li>
+                                <li>About Us</li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h5 class="h-24 bold color-white mb-24">Equipe SoundGrave</h5>
+                            <ul class="link unstyled">
+                                <li><a href="">Acessar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="color-white text-center copyright">Felipe Gravações Community © Copyright 2025</p>
+            </div>
+        </footer>
+        <!-- Footer Area End  -->
+
+        <!-- modal-popup area start  -->
+        <div class="modal fade" id="videoModal" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="top_bar">
+                        <h4 class="modal-title">Demon Slayer Season 4</h4>
+                        <button type="button" class="close" id="closeVideoModalButton" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i> <b>Close</b></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <video controls="" title="Video">
+                            <source src="media/movie-video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal-popup area end  -->
+
+    </div>
+
+    <!-- Jquery Js -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-appear.js"></script>
+    <script src="js/jquery-validator.js"></script>
+    <script src="js/aksVideoPlayer.js"></script>
+
+    <!-- Site Scripts -->
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
